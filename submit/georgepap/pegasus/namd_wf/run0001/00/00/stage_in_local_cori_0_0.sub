@@ -1,0 +1,41 @@
+######################################################################
+# PEGASUS WMS GENERATED SUBMIT FILE
+# DAG : namd_wf, Index = 0, Count = 1
+# SUBMIT FILE NAME : stage_in_local_cori_0_0.sub
+######################################################################
+stream_error  = false
+stream_output = false
+environment = "CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=27d08e86-e07e-4636-9dd3-937232b47d66 PEGASUS_WF_LABEL=namd_wf PEGASUS_DAG_JOB_ID=stage_in_local_cori_0_0 PEGASUS_SITE=local X509_USER_PROXY_cori=/tmp/x509up_u1001"
+arguments = " -n pegasus::transfer -N null -i - -R local  -L namd_wf -T 2019-01-24T18:37:58-08:00 /home/georgepap/pegasus-dist/pegasus-4.8.5dev/bin/../bin/pegasus-transfer  --threads 2 "
+copy_to_spool = false
+error = /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001//00/00/stage_in_local_cori_0_0.err
+executable = /home/georgepap/pegasus-dist/pegasus-4.8.5dev/bin/../bin/pegasus-kickstart
+input = /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001//00/00/stage_in_local_cori_0_0.in
+log = /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/namd_wf-0.log
+notification = NEVER
+output = /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001//00/00/stage_in_local_cori_0_0.out
+periodic_release = False
+periodic_remove = (JobStatus == 5) && ((CurrentTime - EnteredCurrentStatus) > 1800)
+priority = 700
+submit_event_user_notes = pool:local
+transfer_executable = false
+universe = local
++pegasus_generator = "Pegasus"
++pegasus_root_wf_uuid = "27d08e86-e07e-4636-9dd3-937232b47d66"
++pegasus_wf_uuid = "27d08e86-e07e-4636-9dd3-937232b47d66"
++pegasus_version = "4.8.5dev"
++pegasus_wf_name = "namd_wf-0"
++pegasus_wf_app = "namd_example"
++pegasus_wf_time = "20190124T183810-0800"
++pegasus_wf_xformation = "pegasus::transfer"
++pegasus_wf_dax_job_id = "null"
++pegasus_wf_dag_job_id = "stage_in_local_cori_0_0"
++pegasus_job_class = 2
++pegasus_site = "local"
++pegasus_job_runtime = 0
++pegasus_cores = 1
++pegasus_cluster_size = 1
+queue
+######################################################################
+# END OF SUBMIT FILE
+######################################################################

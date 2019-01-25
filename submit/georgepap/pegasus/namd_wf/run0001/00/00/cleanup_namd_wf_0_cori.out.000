@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invocation xmlns="http://pegasus.isi.edu/schema/invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pegasus.isi.edu/schema/invocation http://pegasus.isi.edu/schema/iv-2.3.xsd" version="2.3" start="2019-01-24T18:49:36.378-08:00" duration="2.153" transformation="pegasus::cleanup" derivation="null" resource="local" wf-label="namd_wf" wf-stamp="2019-01-24T18:37:58-08:00" interface="enp4s0" hostaddr="128.9.132.102" hostname="darek.isi.edu" pid="5026" uid="1001" user="georgepap" gid="1001" group="georgepap" umask="0022">
+  <mainjob start="2019-01-24T18:49:36.417-08:00" duration="2.115" pid="5027">
+    <usage utime="0.074" stime="0.041" maxrss="14560" minflt="7950" majflt="0" nswap="0" inblock="0" outblock="8" msgsnd="0" msgrcv="0" nsignals="0" nvcsw="30" nivcsw="15"/>
+    <status raw="0"><regular exitcode="0"/></status>
+    <statcall error="0">
+      <file name="/home/georgepap/pegasus-dist/pegasus-4.8.5dev/bin/pegasus-transfer">23212F7573722F62696E2F707974686F</file>
+      <statinfo mode="0100755" size="144469" inode="10755248" nlink="1" blksize="4096" blocks="288" mtime="2018-10-26T10:35:43-07:00" atime="2019-01-24T17:51:00-08:00" ctime="2018-10-26T10:35:43-07:00" uid="1001" user="georgepap" gid="1001" group="georgepap"/>
+    </statcall>
+    <argument-vector/>
+  </mainjob>
+  <jobids condor="8005.0"/>
+  <cwd>/home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001</cwd>
+  <usage utime="0.021" stime="0.021" maxrss="5876" minflt="201" majflt="0" nswap="0" inblock="0" outblock="0" msgsnd="0" msgrcv="0" nsignals="0" nvcsw="3" nivcsw="6"/>
+  <machine page-size="4096">
+    <stamp>2019-01-24T18:49:36.379-08:00</stamp>
+    <uname system="linux" nodename="darek" release="4.15.0-39-generic" machine="x86_64">#42~16.04.1-Ubuntu SMP Wed Oct 24 17:09:54 UTC 2018</uname>
+    <linux>
+      <ram total="8168064" free="1934948" shared="110608" buffer="972440"/>
+      <swap total="8386556" free="8384012"/>
+      <boot idle="22342367.800">2018-11-20T12:17:12.419-08:00</boot>
+      <cpu count="4" speed="2235" vendor="GenuineIntel">Intel(R) Core(TM)2 Quad CPU Q9400 @ 2.66GHz</cpu>
+      <load min1="0.22" min5="0.18" min15="0.12"/>
+      <procs total="285" running="2" sleeping="236" other="47" vmsize="65099784" rss="3321044"/>
+      <task total="830" running="2" sleeping="781" other="47"/>
+    </linux>
+  </machine>
+  <statcall error="0" id="stdin">
+    <descriptor number="0"/>
+    <statinfo mode="0100664" size="205" inode="17564781" nlink="1" blksize="4096" blocks="8" mtime="2019-01-24T18:38:11-08:00" atime="2019-01-24T18:38:11-08:00" ctime="2019-01-24T18:38:11-08:00" uid="1001" user="georgepap" gid="1001" group="georgepap"/>
+  </statcall>
+  <statcall error="0" id="stdout">
+    <temporary name="/var/spool/condor/local_univ_execute/dir_5025/ks.out.CDgcoR" descriptor="3"/>
+    <statinfo mode="0100600" size="752" inode="20060230" nlink="1" blksize="4096" blocks="8" mtime="2019-01-24T18:49:38-08:00" atime="2019-01-24T18:49:36-08:00" ctime="2019-01-24T18:49:38-08:00" uid="1001" user="georgepap" gid="1001" group="georgepap"/>
+    <data>2019-01-24 18:49:36,494    INFO:  Reading URL pairs from stdin
+2019-01-24 18:49:36,495    INFO:  1 transfers loaded
+2019-01-24 18:49:36,495    INFO:  PATH=/usr/bin:/bin
+2019-01-24 18:49:36,495    INFO:  LD_LIBRARY_PATH=
+2019-01-24 18:49:36,518    INFO:  --------------------------------------------------------------------------------
+2019-01-24 18:49:36,518    INFO:  Starting transfers - attempt 1
+2019-01-24 18:49:38,521    INFO:  Command &apos;gfal-rm&apos; not found in the current environment
+2019-01-24 18:49:38,521    INFO:  --------------------------------------------------------------------------------
+2019-01-24 18:49:38,522    INFO:  Stats: no local files in the transfer set
+2019-01-24 18:49:38,522    INFO:  All transfers completed successfully.
+</data>
+  </statcall>
+  <statcall error="0" id="stderr">
+    <temporary name="/var/spool/condor/local_univ_execute/dir_5025/ks.err.gFVcu6" descriptor="4"/>
+    <statinfo mode="0100600" size="0" inode="20060231" nlink="1" blksize="4096" blocks="0" mtime="2019-01-24T18:49:36-08:00" atime="2019-01-24T18:49:36-08:00" ctime="2019-01-24T18:49:36-08:00" uid="1001" user="georgepap" gid="1001" group="georgepap"/>
+  </statcall>
+  <statcall error="0" id="metadata">
+    <temporary name="/var/spool/condor/local_univ_execute/dir_5025/ks.meta.cGNdAl" descriptor="5"/>
+    <statinfo mode="0100600" size="0" inode="20060232" nlink="1" blksize="4096" blocks="0" mtime="2019-01-24T18:49:36-08:00" atime="2019-01-24T18:49:36-08:00" ctime="2019-01-24T18:49:36-08:00" uid="1001" user="georgepap" gid="1001" group="georgepap"/>
+  </statcall>
+</invocation>

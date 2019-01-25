@@ -1,0 +1,209 @@
+000 (7997.000.000) 01/24 18:38:18 Job submitted from host: <127.0.0.1:14311?addrs=127.0.0.1-14311>
+    DAG Node: create_dir_namd_wf_0_cori
+    pool:local
+...
+001 (7997.000.000) 01/24 18:38:19 Job executing on host: <127.0.0.1:19203?addrs=127.0.0.1-19203>
+...
+005 (7997.000.000) 01/24 18:38:22 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+016 (7997.000.000) 01/24 18:38:23 POST Script terminated.
+	(1) Normal termination (return value 0)
+    DAG Node: create_dir_namd_wf_0_cori
+...
+000 (7998.000.000) 01/24 18:38:33 Job submitted from host: <127.0.0.1:14311?addrs=127.0.0.1-14311>
+    DAG Node: stage_in_local_cori_0_0
+    pool:local
+...
+001 (7998.000.000) 01/24 18:38:33 Job executing on host: <127.0.0.1:6659?addrs=127.0.0.1-6659>
+...
+000 (7999.000.000) 01/24 18:38:33 Job submitted from host: <127.0.0.1:14311?addrs=127.0.0.1-14311>
+    DAG Node: stage_in_local_cori_1_0
+    pool:local
+...
+005 (7998.000.000) 01/24 18:38:38 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+001 (7999.000.000) 01/24 18:38:38 Job executing on host: <127.0.0.1:6399?addrs=127.0.0.1-6399>
+...
+016 (7998.000.000) 01/24 18:38:38 POST Script terminated.
+	(1) Normal termination (return value 0)
+    DAG Node: stage_in_local_cori_0_0
+...
+005 (7999.000.000) 01/24 18:38:42 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+016 (7999.000.000) 01/24 18:38:44 POST Script terminated.
+	(1) Normal termination (return value 0)
+    DAG Node: stage_in_local_cori_1_0
+...
+000 (8000.000.000) 01/24 18:38:49 Job submitted from host: <127.0.0.1:14311?addrs=127.0.0.1-14311>
+    DAG Node: shifter_ID0000003
+    pool:cori
+...
+000 (8001.000.000) 01/24 18:38:49 Job submitted from host: <127.0.0.1:14311?addrs=127.0.0.1-14311>
+    DAG Node: shifter_ID0000001
+    pool:cori
+...
+017 (8001.000.000) 01/24 18:39:00 Job submitted to Globus
+    RM-Contact: corigrid.nersc.gov/jobmanager-slurm
+    JM-Contact: corigrid.nersc.gov/jobmanager-slurm
+    Can-Restart-JM: 1
+...
+027 (8001.000.000) 01/24 18:39:00 Job submitted to grid resource
+    GridResource: gt5 corigrid.nersc.gov/jobmanager-slurm
+    GridJobId: gt5 corigrid.nersc.gov/jobmanager-slurm https://corigrid.nersc.gov:41669/16794285987682399326/6411767159294573442/
+...
+017 (8000.000.000) 01/24 18:39:05 Job submitted to Globus
+    RM-Contact: corigrid.nersc.gov/jobmanager-slurm
+    JM-Contact: corigrid.nersc.gov/jobmanager-slurm
+    Can-Restart-JM: 1
+...
+027 (8000.000.000) 01/24 18:39:05 Job submitted to grid resource
+    GridResource: gt5 corigrid.nersc.gov/jobmanager-slurm
+    GridJobId: gt5 corigrid.nersc.gov/jobmanager-slurm https://corigrid.nersc.gov:41669/16794285986856259166/6411767159294573442/
+...
+001 (8001.000.000) 01/24 18:42:32 Job executing on host: gt5 corigrid.nersc.gov/jobmanager-slurm
+...
+005 (8001.000.000) 01/24 18:43:10 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+000 (8002.000.000) 01/24 18:43:19 Job submitted from host: <127.0.0.1:14311?addrs=127.0.0.1-14311>
+    DAG Node: shifter_ID0000002
+    pool:cori
+...
+017 (8002.000.000) 01/24 18:43:28 Job submitted to Globus
+    RM-Contact: corigrid.nersc.gov/jobmanager-slurm
+    JM-Contact: corigrid.nersc.gov/jobmanager-slurm
+    Can-Restart-JM: 1
+...
+027 (8002.000.000) 01/24 18:43:28 Job submitted to grid resource
+    GridResource: gt5 corigrid.nersc.gov/jobmanager-slurm
+    GridJobId: gt5 corigrid.nersc.gov/jobmanager-slurm https://corigrid.nersc.gov:41669/16794285989738610171/6411767159294573442/
+...
+001 (8000.000.000) 01/24 18:46:00 Job executing on host: gt5 corigrid.nersc.gov/jobmanager-slurm
+...
+005 (8000.000.000) 01/24 18:46:39 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+000 (8003.000.000) 01/24 18:46:45 Job submitted from host: <127.0.0.1:14311?addrs=127.0.0.1-14311>
+    DAG Node: shifter_ID0000004
+    pool:cori
+...
+017 (8003.000.000) 01/24 18:46:54 Job submitted to Globus
+    RM-Contact: corigrid.nersc.gov/jobmanager-slurm
+    JM-Contact: corigrid.nersc.gov/jobmanager-slurm
+    Can-Restart-JM: 1
+...
+027 (8003.000.000) 01/24 18:46:54 Job submitted to grid resource
+    GridResource: gt5 corigrid.nersc.gov/jobmanager-slurm
+    GridJobId: gt5 corigrid.nersc.gov/jobmanager-slurm https://corigrid.nersc.gov:41669/16794287090045168246/6411767159294573442/
+...
+001 (8003.000.000) 01/24 18:47:46 Job executing on host: gt5 corigrid.nersc.gov/jobmanager-slurm
+...
+001 (8002.000.000) 01/24 18:47:49 Job executing on host: gt5 corigrid.nersc.gov/jobmanager-slurm
+...
+005 (8002.000.000) 01/24 18:49:07 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+005 (8003.000.000) 01/24 18:49:12 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+000 (8004.000.000) 01/24 18:49:20 Job submitted from host: <127.0.0.1:14311?addrs=127.0.0.1-14311>
+    DAG Node: stage_out_local_cori_1_0
+    pool:local
+...
+001 (8004.000.000) 01/24 18:49:20 Job executing on host: <127.0.0.1:54763?addrs=127.0.0.1-54763>
+...
+005 (8004.000.000) 01/24 18:49:25 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+016 (8004.000.000) 01/24 18:49:25 POST Script terminated.
+	(1) Normal termination (return value 0)
+    DAG Node: stage_out_local_cori_1_0
+...
+000 (8005.000.000) 01/24 18:49:36 Job submitted from host: <127.0.0.1:14311?addrs=127.0.0.1-14311>
+    DAG Node: cleanup_namd_wf_0_cori
+    pool:local
+...
+001 (8005.000.000) 01/24 18:49:36 Job executing on host: <127.0.0.1:21773?addrs=127.0.0.1-21773>
+...
+005 (8005.000.000) 01/24 18:49:38 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+016 (8005.000.000) 01/24 18:49:41 POST Script terminated.
+	(1) Normal termination (return value 0)
+    DAG Node: cleanup_namd_wf_0_cori
+...

@@ -1,0 +1,22 @@
+{
+  "root_workflow_uuid": "27d08e86-e07e-4636-9dd3-937232b47d66",
+  "workflow_uuid": "27d08e86-e07e-4636-9dd3-937232b47d66",
+  "wf_metadata": {
+    "creator": "georgepap@darek",
+    "created": "Thu Jan 24 18:37:58 2019",
+    "name": "NAMD Example Workflow"
+  },
+  "graph": {
+    "jobs": {
+      "shifter_ID0000004": {},
+      "cleanup_namd_wf_0_cori": {},
+      "shifter_ID0000003": {},
+      "stage_in_local_cori_0_0": {},
+      "stage_in_local_cori_1_0": {},
+      "shifter_ID0000002": {},
+      "shifter_ID0000001": {},
+      "stage_out_local_cori_1_0": {},
+      "create_dir_namd_wf_0_cori": {}
+    }
+  }
+}

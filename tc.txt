@@ -1,0 +1,10 @@
+tr shifter {
+    site cori {
+        pfn "/usr/bin/shifter"
+        arch "x86_64"
+        os "LINUX"
+        type "INSTALLED"
+        profile pegasus "gridstart" "NoGridStart"
+    }
+}
+

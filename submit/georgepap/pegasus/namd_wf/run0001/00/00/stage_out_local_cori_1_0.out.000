@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invocation xmlns="http://pegasus.isi.edu/schema/invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pegasus.isi.edu/schema/invocation http://pegasus.isi.edu/schema/iv-2.3.xsd" version="2.3" start="2019-01-24T18:49:20.870-08:00" duration="4.158" transformation="pegasus::transfer" derivation="null" resource="local" wf-label="namd_wf" wf-stamp="2019-01-24T18:37:58-08:00" interface="enp4s0" hostaddr="128.9.132.102" hostname="darek.isi.edu" pid="4919" uid="1001" user="georgepap" gid="1001" group="georgepap" umask="0022">
+  <mainjob start="2019-01-24T18:49:20.911-08:00" duration="4.117" pid="4920">
+    <usage utime="0.162" stime="0.057" maxrss="14848" minflt="12463" majflt="0" nswap="0" inblock="0" outblock="6976" msgsnd="0" msgrcv="0" nsignals="0" nvcsw="740" nivcsw="16"/>
+    <status raw="0"><regular exitcode="0"/></status>
+    <statcall error="0">
+      <file name="/home/georgepap/pegasus-dist/pegasus-4.8.5dev/bin/pegasus-transfer">23212F7573722F62696E2F707974686F</file>
+      <statinfo mode="0100755" size="144469" inode="10755248" nlink="1" blksize="4096" blocks="288" mtime="2018-10-26T10:35:43-07:00" atime="2019-01-24T17:51:00-08:00" ctime="2018-10-26T10:35:43-07:00" uid="1001" user="georgepap" gid="1001" group="georgepap"/>
+    </statcall>
+    <argument-vector>
+      <arg nr="1">--threads</arg>
+      <arg nr="2">2</arg>
+    </argument-vector>
+  </mainjob>
+  <jobids condor="8004.0"/>
+  <cwd>/home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001</cwd>
+  <usage utime="0.008" stime="0.036" maxrss="5692" minflt="198" majflt="0" nswap="0" inblock="0" outblock="0" msgsnd="0" msgrcv="0" nsignals="0" nvcsw="3" nivcsw="6"/>
+  <machine page-size="4096">
+    <stamp>2019-01-24T18:49:20.870-08:00</stamp>
+    <uname system="linux" nodename="darek" release="4.15.0-39-generic" machine="x86_64">#42~16.04.1-Ubuntu SMP Wed Oct 24 17:09:54 UTC 2018</uname>
+    <linux>
+      <ram total="8168064" free="1937856" shared="110608" buffer="972436"/>
+      <swap total="8386556" free="8384012"/>
+      <boot idle="22342308.910">2018-11-20T12:17:12.421-08:00</boot>
+      <cpu count="4" speed="2462" vendor="GenuineIntel">Intel(R) Core(TM)2 Quad CPU Q9400 @ 2.66GHz</cpu>
+      <load min1="0.29" min5="0.19" min15="0.13"/>
+      <procs total="287" running="3" sleeping="236" other="48" vmsize="65272876" rss="3331680"/>
+      <task total="832" running="2" sleeping="782" other="48"/>
+    </linux>
+  </machine>
+  <statcall error="0" id="stdin">
+    <descriptor number="0"/>
+    <statinfo mode="0100664" size="799" inode="17564779" nlink="1" blksize="4096" blocks="8" mtime="2019-01-24T18:38:11-08:00" atime="2019-01-24T18:38:11-08:00" ctime="2019-01-24T18:38:11-08:00" uid="1001" user="georgepap" gid="1001" group="georgepap"/>
+  </statcall>
+  <statcall error="0" id="stdout">
+    <temporary name="/var/spool/condor/local_univ_execute/dir_4918/ks.out.zfgLvI" descriptor="3"/>
+    <statinfo mode="0100600" size="1899" inode="20060230" nlink="1" blksize="4096" blocks="8" mtime="2019-01-24T18:49:25-08:00" atime="2019-01-24T18:49:20-08:00" ctime="2019-01-24T18:49:25-08:00" uid="1001" user="georgepap" gid="1001" group="georgepap"/>
+    <data>2019-01-24 18:49:20,987    INFO:  Reading URL pairs from stdin
+2019-01-24 18:49:20,988    INFO:  2 transfers loaded
+2019-01-24 18:49:20,988    INFO:  PATH=/usr/bin:/bin
+2019-01-24 18:49:20,988    INFO:  LD_LIBRARY_PATH=
+2019-01-24 18:49:21,012    INFO:  --------------------------------------------------------------------------------
+2019-01-24 18:49:21,012    INFO:  Starting transfers - attempt 1
+2019-01-24 18:49:23,014    INFO:  Command &apos;gfal-copy&apos; not found in the current environment
+2019-01-24 18:49:23,027    INFO:  Tool found: globus-url-copy   Version: 9.29   Path: /usr/bin/globus-url-copy
+2019-01-24 18:49:23,029    INFO:  Grouped 1 similar gsiftp transfers together in temporary file /var/spool/condor/local_univ_execute/dir_4918/pegasus-transfer-8D_fSk.lst
+2019-01-24 18:49:23,030    INFO:  /usr/bin/globus-url-copy -src-cred /tmp/x509up_u1001 -dst-cred /tmp/x509up_u1001 -r -no-third-party-transfers -no-data-channel-authentication -f /var/spool/condor/local_univ_execute/dir_4918/pegasus-transfer-8D_fSk.lst
+2019-01-24 18:49:23,947    INFO:  Grouped 1 similar gsiftp transfers together in temporary file /var/spool/condor/local_univ_execute/dir_4918/pegasus-transfer-3KmZch.lst
+2019-01-24 18:49:23,947    INFO:  /usr/bin/globus-url-copy -src-cred /tmp/x509up_u1001 -dst-cred /tmp/x509up_u1001 -r -no-third-party-transfers -no-data-channel-authentication -f /var/spool/condor/local_univ_execute/dir_4918/pegasus-transfer-3KmZch.lst
+2019-01-24 18:49:25,018    INFO:  --------------------------------------------------------------------------------
+2019-01-24 18:49:25,018    INFO:  Stats: Total 2 transfers, 3.4 MB transferred in 4 seconds. Rate: 860.3 KB/s (6.7 Mb/s)
+2019-01-24 18:49:25,018    INFO:         Between sites cori-&gt;local : 2 transfers, 3.4 MB transferred in 4 seconds. Rate: 860.3 KB/s (6.7 Mb/s)
+2019-01-24 18:49:25,018    INFO:  All transfers completed successfully.
+</data>
+  </statcall>
+  <statcall error="0" id="stderr">
+    <temporary name="/var/spool/condor/local_univ_execute/dir_4918/ks.err.AksOte" descriptor="4"/>
+    <statinfo mode="0100600" size="0" inode="20060231" nlink="1" blksize="4096" blocks="0" mtime="2019-01-24T18:49:20-08:00" atime="2019-01-24T18:49:20-08:00" ctime="2019-01-24T18:49:20-08:00" uid="1001" user="georgepap" gid="1001" group="georgepap"/>
+  </statcall>
+  <statcall error="0" id="metadata">
+    <temporary name="/var/spool/condor/local_univ_execute/dir_4918/ks.meta.RfTRrK" descriptor="5"/>
+    <statinfo mode="0100600" size="0" inode="20060232" nlink="1" blksize="4096" blocks="0" mtime="2019-01-24T18:49:20-08:00" atime="2019-01-24T18:49:20-08:00" ctime="2019-01-24T18:49:20-08:00" uid="1001" user="georgepap" gid="1001" group="georgepap"/>
+  </statcall>
+</invocation>

@@ -1,0 +1,441 @@
+01/24/19 18:38:13 ******************************************************
+01/24/19 18:38:13 ** condor_scheduniv_exec.7996.0 (CONDOR_DAGMAN) STARTING UP
+01/24/19 18:38:13 ** /usr/bin/condor_dagman
+01/24/19 18:38:13 ** SubsystemInfo: name=DAGMAN type=DAGMAN(10) class=DAEMON(1)
+01/24/19 18:38:13 ** Configuration: subsystem:DAGMAN local:<NONE> class:DAEMON
+01/24/19 18:38:13 ** $CondorVersion: 8.4.9 Nov 27 2016 BuildID: Debian-8.4.9~dfsg.1-2~nd16.04+1 Debian-8.4.9~dfsg.1-2~nd16.04+1 $
+01/24/19 18:38:13 ** $CondorPlatform: X86_64-Ubuntu_16.04 $
+01/24/19 18:38:13 ** PID = 1503
+01/24/19 18:38:13 ** Log last touched time unavailable (No such file or directory)
+01/24/19 18:38:13 ******************************************************
+01/24/19 18:38:13 Using config source: /etc/condor/condor_config
+01/24/19 18:38:13 Using local config sources: 
+01/24/19 18:38:13    /etc/condor/config.d/00debconf
+01/24/19 18:38:13    /etc/condor/condor_config.local
+01/24/19 18:38:13 config Macros = 70, Sorted = 70, StringBytes = 2062, TablesBytes = 2576
+01/24/19 18:38:13 CLASSAD_CACHING is ENABLED
+01/24/19 18:38:13 Daemon Log is logging: D_ALWAYS D_ERROR
+01/24/19 18:38:13 DaemonCore: No command port requested.
+01/24/19 18:38:13 DAGMAN_USE_STRICT setting: 1
+01/24/19 18:38:13 DAGMAN_VERBOSITY setting: 3
+01/24/19 18:38:13 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+01/24/19 18:38:13 DAGMAN_DEBUG_CACHE_ENABLE setting: False
+01/24/19 18:38:13 DAGMAN_SUBMIT_DELAY setting: 0
+01/24/19 18:38:13 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+01/24/19 18:38:13 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+01/24/19 18:38:13 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 5
+01/24/19 18:38:13 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+01/24/19 18:38:13 DAGMAN_DEFAULT_PRIORITY setting: 0
+01/24/19 18:38:13 DAGMAN_SUPPRESS_NOTIFICATION setting: True
+01/24/19 18:38:13 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+01/24/19 18:38:13 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+01/24/19 18:38:13 DAGMAN_RETRY_NODE_FIRST setting: False
+01/24/19 18:38:13 DAGMAN_MAX_JOBS_IDLE setting: 1000
+01/24/19 18:38:13 DAGMAN_MAX_JOBS_SUBMITTED setting: 0
+01/24/19 18:38:13 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+01/24/19 18:38:13 DAGMAN_MAX_POST_SCRIPTS setting: 20
+01/24/19 18:38:13 DAGMAN_ALLOW_LOG_ERROR setting: False
+01/24/19 18:38:13 DAGMAN_MUNGE_NODE_NAMES setting: True
+01/24/19 18:38:13 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+01/24/19 18:38:13 DAGMAN_SUBMIT_DEPTH_FIRST setting: False
+01/24/19 18:38:13 DAGMAN_ALWAYS_RUN_POST setting: True
+01/24/19 18:38:13 DAGMAN_ABORT_DUPLICATES setting: True
+01/24/19 18:38:13 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+01/24/19 18:38:13 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+01/24/19 18:38:13 DAGMAN_AUTO_RESCUE setting: True
+01/24/19 18:38:13 DAGMAN_MAX_RESCUE_NUM setting: 100
+01/24/19 18:38:13 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+01/24/19 18:38:13 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+01/24/19 18:38:13 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+01/24/19 18:38:13 DAGMAN_MAX_JOB_HOLDS setting: 100
+01/24/19 18:38:13 DAGMAN_HOLD_CLAIM_TIME setting: 20
+01/24/19 18:38:13 ALL_DEBUG setting: 
+01/24/19 18:38:13 DAGMAN_DEBUG setting: 
+01/24/19 18:38:13 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+01/24/19 18:38:13 argv[0] == "condor_scheduniv_exec.7996.0"
+01/24/19 18:38:13 argv[1] == "-Lockfile"
+01/24/19 18:38:13 argv[2] == "namd_wf-0.dag.lock"
+01/24/19 18:38:13 argv[3] == "-AutoRescue"
+01/24/19 18:38:13 argv[4] == "1"
+01/24/19 18:38:13 argv[5] == "-DoRescueFrom"
+01/24/19 18:38:13 argv[6] == "0"
+01/24/19 18:38:13 argv[7] == "-Dag"
+01/24/19 18:38:13 argv[8] == "namd_wf-0.dag"
+01/24/19 18:38:13 argv[9] == "-MaxPost"
+01/24/19 18:38:13 argv[10] == "20"
+01/24/19 18:38:13 argv[11] == "-Suppress_notification"
+01/24/19 18:38:13 argv[12] == "-CsdVersion"
+01/24/19 18:38:13 argv[13] == "$CondorVersion: 8.4.9 Nov 27 2016 BuildID: Debian-8.4.9~dfsg.1-2~nd16.04+1 Debian-8.4.9~dfsg.1-2~nd16.04+1 $"
+01/24/19 18:38:13 argv[14] == "-Dagman"
+01/24/19 18:38:13 argv[15] == "/usr/bin/condor_dagman"
+01/24/19 18:38:13 Warning: failed to get attribute DAGNodeName
+01/24/19 18:38:13 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+01/24/19 18:38:13 Default node log file is: </home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/./namd_wf-0.dag.nodes.log>
+01/24/19 18:38:13 DAG Lockfile will be written to namd_wf-0.dag.lock
+01/24/19 18:38:13 DAG Input file is namd_wf-0.dag
+01/24/19 18:38:13 Parsing 1 dagfiles
+01/24/19 18:38:13 Parsing namd_wf-0.dag ...
+01/24/19 18:38:13 Warning: category registration has no assigned nodes, so the throttle setting (1) will have no effect
+01/24/19 18:38:13 Warning: category cleanup has no assigned nodes, so the throttle setting (4) will have no effect
+01/24/19 18:38:13 Dag contains 9 total jobs
+01/24/19 18:38:13 Sleeping for 3 seconds to ensure ProcessId uniqueness
+01/24/19 18:38:16 Bootstrapping...
+01/24/19 18:38:16 Number of pre-completed nodes: 0
+01/24/19 18:38:16 MultiLogFiles: truncating log file /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/./namd_wf-0.dag.nodes.log
+01/24/19 18:38:16 DAG status: 0 (DAG_STATUS_OK)
+01/24/19 18:38:16 Of 9 nodes total:
+01/24/19 18:38:16  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/24/19 18:38:16   ===     ===      ===     ===     ===        ===      ===
+01/24/19 18:38:16     0       0        0       0       1          8        0
+01/24/19 18:38:16 0 job proc(s) currently held
+01/24/19 18:38:16 Registering condor_event_timer...
+01/24/19 18:38:17 Submitting Condor Node create_dir_namd_wf_0_cori job(s)...
+01/24/19 18:38:17 Adding a DAGMan workflow log /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/./namd_wf-0.dag.nodes.log
+01/24/19 18:38:17 Masking the events recorded in the DAGMAN workflow log
+01/24/19 18:38:17 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/24/19 18:38:17 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'create_dir_namd_wf_0_cori -a +DAGManJobId' '=' '7996 -a DAGManJobId' '=' '7996 -a submit_event_notes' '=' 'DAG' 'Node:' 'create_dir_namd_wf_0_cori -a dagman_log' '=' '/home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/./namd_wf-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a +DAGNodeRetry' '=' '0 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never 00/00/create_dir_namd_wf_0_cori.sub
+01/24/19 18:38:18 From submit: Submitting job(s).
+01/24/19 18:38:18 From submit: 1 job(s) submitted to cluster 7997.
+01/24/19 18:38:18 	assigned Condor ID (7997.0.0)
+01/24/19 18:38:18 Just submitted 1 job this cycle...
+01/24/19 18:38:18 Currently monitoring 1 Condor log file(s)
+01/24/19 18:38:18 Reassigning the id of job create_dir_namd_wf_0_cori from (7997.0.0) to (7997.0.0)
+01/24/19 18:38:18 Event: ULOG_SUBMIT for Condor Node create_dir_namd_wf_0_cori (7997.0.0)
+01/24/19 18:38:18 Number of idle job procs: 1
+01/24/19 18:38:18 DAG status: 0 (DAG_STATUS_OK)
+01/24/19 18:38:18 Of 9 nodes total:
+01/24/19 18:38:18  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/24/19 18:38:18   ===     ===      ===     ===     ===        ===      ===
+01/24/19 18:38:18     0       0        1       0       0          8        0
+01/24/19 18:38:18 0 job proc(s) currently held
+01/24/19 18:38:23 Currently monitoring 1 Condor log file(s)
+01/24/19 18:38:23 Event: ULOG_EXECUTE for Condor Node create_dir_namd_wf_0_cori (7997.0.0)
+01/24/19 18:38:23 Number of idle job procs: 0
+01/24/19 18:38:23 Event: ULOG_JOB_TERMINATED for Condor Node create_dir_namd_wf_0_cori (7997.0.0)
+01/24/19 18:38:23 Number of idle job procs: 0
+01/24/19 18:38:23 Node create_dir_namd_wf_0_cori job proc (7997.0.0) completed successfully.
+01/24/19 18:38:23 Node create_dir_namd_wf_0_cori job completed
+01/24/19 18:38:23 Running POST script of Node create_dir_namd_wf_0_cori...
+01/24/19 18:38:23 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+01/24/19 18:38:23 DAG status: 0 (DAG_STATUS_OK)
+01/24/19 18:38:23 Of 9 nodes total:
+01/24/19 18:38:23  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/24/19 18:38:23   ===     ===      ===     ===     ===        ===      ===
+01/24/19 18:38:23     0       0        0       1       0          8        0
+01/24/19 18:38:23 0 job proc(s) currently held
+01/24/19 18:38:23 Initializing user log writer for /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/./namd_wf-0.dag.nodes.log, (7997.0.0)
+01/24/19 18:38:28 Currently monitoring 1 Condor log file(s)
+01/24/19 18:38:28 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node create_dir_namd_wf_0_cori (7997.0.0)
+01/24/19 18:38:28 POST Script of Node create_dir_namd_wf_0_cori completed successfully.
+01/24/19 18:38:28 DAG status: 0 (DAG_STATUS_OK)
+01/24/19 18:38:28 Of 9 nodes total:
+01/24/19 18:38:28  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/24/19 18:38:28   ===     ===      ===     ===     ===        ===      ===
+01/24/19 18:38:28     1       0        0       0       2          6        0
+01/24/19 18:38:28 0 job proc(s) currently held
+01/24/19 18:38:33 Submitting Condor Node stage_in_local_cori_0_0 job(s)...
+01/24/19 18:38:33 Adding a DAGMan workflow log /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/./namd_wf-0.dag.nodes.log
+01/24/19 18:38:33 Masking the events recorded in the DAGMAN workflow log
+01/24/19 18:38:33 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/24/19 18:38:33 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'stage_in_local_cori_0_0 -a +DAGManJobId' '=' '7996 -a DAGManJobId' '=' '7996 -a submit_event_notes' '=' 'DAG' 'Node:' 'stage_in_local_cori_0_0 -a dagman_log' '=' '/home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/./namd_wf-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a +DAGNodeRetry' '=' '0 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"create_dir_namd_wf_0_cori" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never 00/00/stage_in_local_cori_0_0.sub
+01/24/19 18:38:33 From submit: Submitting job(s).
+01/24/19 18:38:33 From submit: 1 job(s) submitted to cluster 7998.
+01/24/19 18:38:33 	assigned Condor ID (7998.0.0)
+01/24/19 18:38:33 Submitting Condor Node stage_in_local_cori_1_0 job(s)...
+01/24/19 18:38:33 Adding a DAGMan workflow log /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/./namd_wf-0.dag.nodes.log
+01/24/19 18:38:33 Masking the events recorded in the DAGMAN workflow log
+01/24/19 18:38:33 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/24/19 18:38:33 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'stage_in_local_cori_1_0 -a +DAGManJobId' '=' '7996 -a DAGManJobId' '=' '7996 -a submit_event_notes' '=' 'DAG' 'Node:' 'stage_in_local_cori_1_0 -a dagman_log' '=' '/home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/./namd_wf-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a +DAGNodeRetry' '=' '0 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"create_dir_namd_wf_0_cori" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never 00/00/stage_in_local_cori_1_0.sub
+01/24/19 18:38:33 From submit: Submitting job(s).
+01/24/19 18:38:33 From submit: 1 job(s) submitted to cluster 7999.
+01/24/19 18:38:33 	assigned Condor ID (7999.0.0)
+01/24/19 18:38:33 Just submitted 2 jobs this cycle...
+01/24/19 18:38:33 Currently monitoring 1 Condor log file(s)
+01/24/19 18:38:33 Reassigning the id of job stage_in_local_cori_0_0 from (7998.0.0) to (7998.0.0)
+01/24/19 18:38:33 Event: ULOG_SUBMIT for Condor Node stage_in_local_cori_0_0 (7998.0.0)
+01/24/19 18:38:33 Number of idle job procs: 1
+01/24/19 18:38:33 Event: ULOG_EXECUTE for Condor Node stage_in_local_cori_0_0 (7998.0.0)
+01/24/19 18:38:33 Number of idle job procs: 0
+01/24/19 18:38:33 Reassigning the id of job stage_in_local_cori_1_0 from (7999.0.0) to (7999.0.0)
+01/24/19 18:38:33 Event: ULOG_SUBMIT for Condor Node stage_in_local_cori_1_0 (7999.0.0)
+01/24/19 18:38:33 Number of idle job procs: 1
+01/24/19 18:38:33 DAG status: 0 (DAG_STATUS_OK)
+01/24/19 18:38:33 Of 9 nodes total:
+01/24/19 18:38:33  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/24/19 18:38:33   ===     ===      ===     ===     ===        ===      ===
+01/24/19 18:38:33     1       0        2       0       0          6        0
+01/24/19 18:38:33 0 job proc(s) currently held
+01/24/19 18:38:38 Currently monitoring 1 Condor log file(s)
+01/24/19 18:38:38 Event: ULOG_JOB_TERMINATED for Condor Node stage_in_local_cori_0_0 (7998.0.0)
+01/24/19 18:38:38 Number of idle job procs: 1
+01/24/19 18:38:38 Node stage_in_local_cori_0_0 job proc (7998.0.0) completed successfully.
+01/24/19 18:38:38 Node stage_in_local_cori_0_0 job completed
+01/24/19 18:38:38 Running POST script of Node stage_in_local_cori_0_0...
+01/24/19 18:38:38 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+01/24/19 18:38:38 Event: ULOG_EXECUTE for Condor Node stage_in_local_cori_1_0 (7999.0.0)
+01/24/19 18:38:38 Number of idle job procs: 0
+01/24/19 18:38:38 DAG status: 0 (DAG_STATUS_OK)
+01/24/19 18:38:38 Of 9 nodes total:
+01/24/19 18:38:38  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/24/19 18:38:38   ===     ===      ===     ===     ===        ===      ===
+01/24/19 18:38:38     1       0        1       1       0          6        0
+01/24/19 18:38:38 0 job proc(s) currently held
+01/24/19 18:38:38 Initializing user log writer for /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/./namd_wf-0.dag.nodes.log, (7998.0.0)
+01/24/19 18:38:43 Currently monitoring 1 Condor log file(s)
+01/24/19 18:38:43 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node stage_in_local_cori_0_0 (7998.0.0)
+01/24/19 18:38:43 POST Script of Node stage_in_local_cori_0_0 completed successfully.
+01/24/19 18:38:43 Event: ULOG_JOB_TERMINATED for Condor Node stage_in_local_cori_1_0 (7999.0.0)
+01/24/19 18:38:43 Number of idle job procs: 0
+01/24/19 18:38:43 Node stage_in_local_cori_1_0 job proc (7999.0.0) completed successfully.
+01/24/19 18:38:43 Node stage_in_local_cori_1_0 job completed
+01/24/19 18:38:43 Running POST script of Node stage_in_local_cori_1_0...
+01/24/19 18:38:43 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+01/24/19 18:38:43 DAG status: 0 (DAG_STATUS_OK)
+01/24/19 18:38:43 Of 9 nodes total:
+01/24/19 18:38:43  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/24/19 18:38:43   ===     ===      ===     ===     ===        ===      ===
+01/24/19 18:38:43     2       0        0       1       2          4        0
+01/24/19 18:38:43 0 job proc(s) currently held
+01/24/19 18:38:44 Initializing user log writer for /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/./namd_wf-0.dag.nodes.log, (7999.0.0)
+01/24/19 18:38:49 Submitting Condor Node shifter_ID0000003 job(s)...
+01/24/19 18:38:49 Adding a DAGMan workflow log /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/./namd_wf-0.dag.nodes.log
+01/24/19 18:38:49 Masking the events recorded in the DAGMAN workflow log
+01/24/19 18:38:49 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/24/19 18:38:49 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'shifter_ID0000003 -a +DAGManJobId' '=' '7996 -a DAGManJobId' '=' '7996 -a submit_event_notes' '=' 'DAG' 'Node:' 'shifter_ID0000003 -a dagman_log' '=' '/home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/./namd_wf-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a +DAGNodeRetry' '=' '0 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"stage_in_local_cori_0_0" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never 00/00/shifter_ID0000003.sub
+01/24/19 18:38:49 From submit: Submitting job(s).
+01/24/19 18:38:49 From submit: 1 job(s) submitted to cluster 8000.
+01/24/19 18:38:49 	assigned Condor ID (8000.0.0)
+01/24/19 18:38:49 Submitting Condor Node shifter_ID0000001 job(s)...
+01/24/19 18:38:49 Adding a DAGMan workflow log /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/./namd_wf-0.dag.nodes.log
+01/24/19 18:38:49 Masking the events recorded in the DAGMAN workflow log
+01/24/19 18:38:49 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/24/19 18:38:49 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'shifter_ID0000001 -a +DAGManJobId' '=' '7996 -a DAGManJobId' '=' '7996 -a submit_event_notes' '=' 'DAG' 'Node:' 'shifter_ID0000001 -a dagman_log' '=' '/home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/./namd_wf-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a +DAGNodeRetry' '=' '0 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"stage_in_local_cori_0_0" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never 00/00/shifter_ID0000001.sub
+01/24/19 18:38:49 From submit: Submitting job(s).
+01/24/19 18:38:49 From submit: 1 job(s) submitted to cluster 8001.
+01/24/19 18:38:49 	assigned Condor ID (8001.0.0)
+01/24/19 18:38:49 Just submitted 2 jobs this cycle...
+01/24/19 18:38:49 Currently monitoring 1 Condor log file(s)
+01/24/19 18:38:49 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node stage_in_local_cori_1_0 (7999.0.0)
+01/24/19 18:38:49 POST Script of Node stage_in_local_cori_1_0 completed successfully.
+01/24/19 18:38:49 Reassigning the id of job shifter_ID0000003 from (8000.0.0) to (8000.0.0)
+01/24/19 18:38:49 Event: ULOG_SUBMIT for Condor Node shifter_ID0000003 (8000.0.0)
+01/24/19 18:38:49 Number of idle job procs: 1
+01/24/19 18:38:49 Reassigning the id of job shifter_ID0000001 from (8001.0.0) to (8001.0.0)
+01/24/19 18:38:49 Event: ULOG_SUBMIT for Condor Node shifter_ID0000001 (8001.0.0)
+01/24/19 18:38:49 Number of idle job procs: 2
+01/24/19 18:38:49 DAG status: 0 (DAG_STATUS_OK)
+01/24/19 18:38:49 Of 9 nodes total:
+01/24/19 18:38:49  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/24/19 18:38:49   ===     ===      ===     ===     ===        ===      ===
+01/24/19 18:38:49     3       0        2       0       0          4        0
+01/24/19 18:38:49 0 job proc(s) currently held
+01/24/19 18:39:04 Currently monitoring 1 Condor log file(s)
+01/24/19 18:39:04 Event: ULOG_GLOBUS_SUBMIT for Condor Node shifter_ID0000001 (8001.0.0)
+01/24/19 18:39:04 Event: ULOG_GRID_SUBMIT for Condor Node shifter_ID0000001 (8001.0.0)
+01/24/19 18:39:09 Currently monitoring 1 Condor log file(s)
+01/24/19 18:39:09 Event: ULOG_GLOBUS_SUBMIT for Condor Node shifter_ID0000003 (8000.0.0)
+01/24/19 18:39:09 Event: ULOG_GRID_SUBMIT for Condor Node shifter_ID0000003 (8000.0.0)
+01/24/19 18:42:34 Currently monitoring 1 Condor log file(s)
+01/24/19 18:42:34 Event: ULOG_EXECUTE for Condor Node shifter_ID0000001 (8001.0.0)
+01/24/19 18:42:34 Number of idle job procs: 1
+01/24/19 18:43:14 Currently monitoring 1 Condor log file(s)
+01/24/19 18:43:14 Event: ULOG_JOB_TERMINATED for Condor Node shifter_ID0000001 (8001.0.0)
+01/24/19 18:43:14 Number of idle job procs: 1
+01/24/19 18:43:14 Node shifter_ID0000001 job proc (8001.0.0) completed successfully.
+01/24/19 18:43:14 Node shifter_ID0000001 job completed
+01/24/19 18:43:14 DAG status: 0 (DAG_STATUS_OK)
+01/24/19 18:43:14 Of 9 nodes total:
+01/24/19 18:43:14  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/24/19 18:43:14   ===     ===      ===     ===     ===        ===      ===
+01/24/19 18:43:14     4       0        1       0       1          3        0
+01/24/19 18:43:14 0 job proc(s) currently held
+01/24/19 18:43:19 Submitting Condor Node shifter_ID0000002 job(s)...
+01/24/19 18:43:19 Adding a DAGMan workflow log /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/./namd_wf-0.dag.nodes.log
+01/24/19 18:43:19 Masking the events recorded in the DAGMAN workflow log
+01/24/19 18:43:19 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/24/19 18:43:19 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'shifter_ID0000002 -a +DAGManJobId' '=' '7996 -a DAGManJobId' '=' '7996 -a submit_event_notes' '=' 'DAG' 'Node:' 'shifter_ID0000002 -a dagman_log' '=' '/home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/./namd_wf-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a +DAGNodeRetry' '=' '0 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"stage_in_local_cori_0_0,stage_in_local_cori_1_0,shifter_ID0000001" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never 00/00/shifter_ID0000002.sub
+01/24/19 18:43:19 From submit: Submitting job(s).
+01/24/19 18:43:19 From submit: 1 job(s) submitted to cluster 8002.
+01/24/19 18:43:19 	assigned Condor ID (8002.0.0)
+01/24/19 18:43:19 Just submitted 1 job this cycle...
+01/24/19 18:43:19 Currently monitoring 1 Condor log file(s)
+01/24/19 18:43:19 Reassigning the id of job shifter_ID0000002 from (8002.0.0) to (8002.0.0)
+01/24/19 18:43:19 Event: ULOG_SUBMIT for Condor Node shifter_ID0000002 (8002.0.0)
+01/24/19 18:43:19 Number of idle job procs: 2
+01/24/19 18:43:19 DAG status: 0 (DAG_STATUS_OK)
+01/24/19 18:43:19 Of 9 nodes total:
+01/24/19 18:43:19  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/24/19 18:43:19   ===     ===      ===     ===     ===        ===      ===
+01/24/19 18:43:19     4       0        2       0       0          3        0
+01/24/19 18:43:19 0 job proc(s) currently held
+01/24/19 18:43:29 Currently monitoring 1 Condor log file(s)
+01/24/19 18:43:29 Event: ULOG_GLOBUS_SUBMIT for Condor Node shifter_ID0000002 (8002.0.0)
+01/24/19 18:43:29 Event: ULOG_GRID_SUBMIT for Condor Node shifter_ID0000002 (8002.0.0)
+01/24/19 18:46:04 Currently monitoring 1 Condor log file(s)
+01/24/19 18:46:04 Event: ULOG_EXECUTE for Condor Node shifter_ID0000003 (8000.0.0)
+01/24/19 18:46:04 Number of idle job procs: 1
+01/24/19 18:46:40 Currently monitoring 1 Condor log file(s)
+01/24/19 18:46:40 Event: ULOG_JOB_TERMINATED for Condor Node shifter_ID0000003 (8000.0.0)
+01/24/19 18:46:40 Number of idle job procs: 1
+01/24/19 18:46:40 Node shifter_ID0000003 job proc (8000.0.0) completed successfully.
+01/24/19 18:46:40 Node shifter_ID0000003 job completed
+01/24/19 18:46:40 DAG status: 0 (DAG_STATUS_OK)
+01/24/19 18:46:40 Of 9 nodes total:
+01/24/19 18:46:40  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/24/19 18:46:40   ===     ===      ===     ===     ===        ===      ===
+01/24/19 18:46:40     5       0        1       0       1          2        0
+01/24/19 18:46:40 0 job proc(s) currently held
+01/24/19 18:46:45 Submitting Condor Node shifter_ID0000004 job(s)...
+01/24/19 18:46:45 Adding a DAGMan workflow log /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/./namd_wf-0.dag.nodes.log
+01/24/19 18:46:45 Masking the events recorded in the DAGMAN workflow log
+01/24/19 18:46:45 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/24/19 18:46:45 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'shifter_ID0000004 -a +DAGManJobId' '=' '7996 -a DAGManJobId' '=' '7996 -a submit_event_notes' '=' 'DAG' 'Node:' 'shifter_ID0000004 -a dagman_log' '=' '/home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/./namd_wf-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a +DAGNodeRetry' '=' '0 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"stage_in_local_cori_0_0,stage_in_local_cori_1_0,shifter_ID0000003" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never 00/00/shifter_ID0000004.sub
+01/24/19 18:46:45 From submit: Submitting job(s).
+01/24/19 18:46:45 From submit: 1 job(s) submitted to cluster 8003.
+01/24/19 18:46:45 	assigned Condor ID (8003.0.0)
+01/24/19 18:46:45 Just submitted 1 job this cycle...
+01/24/19 18:46:45 Currently monitoring 1 Condor log file(s)
+01/24/19 18:46:45 Reassigning the id of job shifter_ID0000004 from (8003.0.0) to (8003.0.0)
+01/24/19 18:46:45 Event: ULOG_SUBMIT for Condor Node shifter_ID0000004 (8003.0.0)
+01/24/19 18:46:45 Number of idle job procs: 2
+01/24/19 18:46:45 DAG status: 0 (DAG_STATUS_OK)
+01/24/19 18:46:45 Of 9 nodes total:
+01/24/19 18:46:45  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/24/19 18:46:45   ===     ===      ===     ===     ===        ===      ===
+01/24/19 18:46:45     5       0        2       0       0          2        0
+01/24/19 18:46:45 0 job proc(s) currently held
+01/24/19 18:46:55 Currently monitoring 1 Condor log file(s)
+01/24/19 18:46:55 Event: ULOG_GLOBUS_SUBMIT for Condor Node shifter_ID0000004 (8003.0.0)
+01/24/19 18:46:55 Event: ULOG_GRID_SUBMIT for Condor Node shifter_ID0000004 (8003.0.0)
+01/24/19 18:47:50 Currently monitoring 1 Condor log file(s)
+01/24/19 18:47:50 Event: ULOG_EXECUTE for Condor Node shifter_ID0000004 (8003.0.0)
+01/24/19 18:47:50 Number of idle job procs: 1
+01/24/19 18:47:50 Event: ULOG_EXECUTE for Condor Node shifter_ID0000002 (8002.0.0)
+01/24/19 18:47:50 Number of idle job procs: 0
+01/24/19 18:49:10 Currently monitoring 1 Condor log file(s)
+01/24/19 18:49:10 Event: ULOG_JOB_TERMINATED for Condor Node shifter_ID0000002 (8002.0.0)
+01/24/19 18:49:10 Number of idle job procs: 0
+01/24/19 18:49:10 Node shifter_ID0000002 job proc (8002.0.0) completed successfully.
+01/24/19 18:49:10 Node shifter_ID0000002 job completed
+01/24/19 18:49:10 DAG status: 0 (DAG_STATUS_OK)
+01/24/19 18:49:10 Of 9 nodes total:
+01/24/19 18:49:10  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/24/19 18:49:10   ===     ===      ===     ===     ===        ===      ===
+01/24/19 18:49:10     6       0        1       0       0          2        0
+01/24/19 18:49:10 0 job proc(s) currently held
+01/24/19 18:49:15 Currently monitoring 1 Condor log file(s)
+01/24/19 18:49:15 Event: ULOG_JOB_TERMINATED for Condor Node shifter_ID0000004 (8003.0.0)
+01/24/19 18:49:15 Number of idle job procs: 0
+01/24/19 18:49:15 Node shifter_ID0000004 job proc (8003.0.0) completed successfully.
+01/24/19 18:49:15 Node shifter_ID0000004 job completed
+01/24/19 18:49:15 DAG status: 0 (DAG_STATUS_OK)
+01/24/19 18:49:15 Of 9 nodes total:
+01/24/19 18:49:15  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/24/19 18:49:15   ===     ===      ===     ===     ===        ===      ===
+01/24/19 18:49:15     7       0        0       0       1          1        0
+01/24/19 18:49:15 0 job proc(s) currently held
+01/24/19 18:49:20 Submitting Condor Node stage_out_local_cori_1_0 job(s)...
+01/24/19 18:49:20 Adding a DAGMan workflow log /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/./namd_wf-0.dag.nodes.log
+01/24/19 18:49:20 Masking the events recorded in the DAGMAN workflow log
+01/24/19 18:49:20 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/24/19 18:49:20 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'stage_out_local_cori_1_0 -a +DAGManJobId' '=' '7996 -a DAGManJobId' '=' '7996 -a submit_event_notes' '=' 'DAG' 'Node:' 'stage_out_local_cori_1_0 -a dagman_log' '=' '/home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/./namd_wf-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a +DAGNodeRetry' '=' '0 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"shifter_ID0000004,shifter_ID0000002" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never 00/00/stage_out_local_cori_1_0.sub
+01/24/19 18:49:20 From submit: Submitting job(s).
+01/24/19 18:49:20 From submit: 1 job(s) submitted to cluster 8004.
+01/24/19 18:49:20 	assigned Condor ID (8004.0.0)
+01/24/19 18:49:20 Just submitted 1 job this cycle...
+01/24/19 18:49:20 Currently monitoring 1 Condor log file(s)
+01/24/19 18:49:20 Reassigning the id of job stage_out_local_cori_1_0 from (8004.0.0) to (8004.0.0)
+01/24/19 18:49:20 Event: ULOG_SUBMIT for Condor Node stage_out_local_cori_1_0 (8004.0.0)
+01/24/19 18:49:20 Number of idle job procs: 1
+01/24/19 18:49:20 DAG status: 0 (DAG_STATUS_OK)
+01/24/19 18:49:20 Of 9 nodes total:
+01/24/19 18:49:20  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/24/19 18:49:20   ===     ===      ===     ===     ===        ===      ===
+01/24/19 18:49:20     7       0        1       0       0          1        0
+01/24/19 18:49:20 0 job proc(s) currently held
+01/24/19 18:49:25 Currently monitoring 1 Condor log file(s)
+01/24/19 18:49:25 Event: ULOG_EXECUTE for Condor Node stage_out_local_cori_1_0 (8004.0.0)
+01/24/19 18:49:25 Number of idle job procs: 0
+01/24/19 18:49:25 Event: ULOG_JOB_TERMINATED for Condor Node stage_out_local_cori_1_0 (8004.0.0)
+01/24/19 18:49:25 Number of idle job procs: 0
+01/24/19 18:49:25 Node stage_out_local_cori_1_0 job proc (8004.0.0) completed successfully.
+01/24/19 18:49:25 Node stage_out_local_cori_1_0 job completed
+01/24/19 18:49:25 Running POST script of Node stage_out_local_cori_1_0...
+01/24/19 18:49:25 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+01/24/19 18:49:25 DAG status: 0 (DAG_STATUS_OK)
+01/24/19 18:49:25 Of 9 nodes total:
+01/24/19 18:49:25  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/24/19 18:49:25   ===     ===      ===     ===     ===        ===      ===
+01/24/19 18:49:25     7       0        0       1       0          1        0
+01/24/19 18:49:25 0 job proc(s) currently held
+01/24/19 18:49:25 Initializing user log writer for /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/./namd_wf-0.dag.nodes.log, (8004.0.0)
+01/24/19 18:49:30 Currently monitoring 1 Condor log file(s)
+01/24/19 18:49:30 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node stage_out_local_cori_1_0 (8004.0.0)
+01/24/19 18:49:30 POST Script of Node stage_out_local_cori_1_0 completed successfully.
+01/24/19 18:49:30 DAG status: 0 (DAG_STATUS_OK)
+01/24/19 18:49:30 Of 9 nodes total:
+01/24/19 18:49:30  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/24/19 18:49:30   ===     ===      ===     ===     ===        ===      ===
+01/24/19 18:49:30     8       0        0       0       1          0        0
+01/24/19 18:49:30 0 job proc(s) currently held
+01/24/19 18:49:35 Submitting Condor Node cleanup_namd_wf_0_cori job(s)...
+01/24/19 18:49:35 Adding a DAGMan workflow log /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/./namd_wf-0.dag.nodes.log
+01/24/19 18:49:35 Masking the events recorded in the DAGMAN workflow log
+01/24/19 18:49:35 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/24/19 18:49:35 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'cleanup_namd_wf_0_cori -a +DAGManJobId' '=' '7996 -a DAGManJobId' '=' '7996 -a submit_event_notes' '=' 'DAG' 'Node:' 'cleanup_namd_wf_0_cori -a dagman_log' '=' '/home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/./namd_wf-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a +DAGNodeRetry' '=' '0 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"stage_out_local_cori_1_0" -a notification' '=' 'never 00/00/cleanup_namd_wf_0_cori.sub
+01/24/19 18:49:36 From submit: Submitting job(s).
+01/24/19 18:49:36 From submit: 1 job(s) submitted to cluster 8005.
+01/24/19 18:49:36 	assigned Condor ID (8005.0.0)
+01/24/19 18:49:36 Just submitted 1 job this cycle...
+01/24/19 18:49:36 Currently monitoring 1 Condor log file(s)
+01/24/19 18:49:36 Reassigning the id of job cleanup_namd_wf_0_cori from (8005.0.0) to (8005.0.0)
+01/24/19 18:49:36 Event: ULOG_SUBMIT for Condor Node cleanup_namd_wf_0_cori (8005.0.0)
+01/24/19 18:49:36 Number of idle job procs: 1
+01/24/19 18:49:36 DAG status: 0 (DAG_STATUS_OK)
+01/24/19 18:49:36 Of 9 nodes total:
+01/24/19 18:49:36  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/24/19 18:49:36   ===     ===      ===     ===     ===        ===      ===
+01/24/19 18:49:36     8       0        1       0       0          0        0
+01/24/19 18:49:36 0 job proc(s) currently held
+01/24/19 18:49:41 Currently monitoring 1 Condor log file(s)
+01/24/19 18:49:41 Event: ULOG_EXECUTE for Condor Node cleanup_namd_wf_0_cori (8005.0.0)
+01/24/19 18:49:41 Number of idle job procs: 0
+01/24/19 18:49:41 Event: ULOG_JOB_TERMINATED for Condor Node cleanup_namd_wf_0_cori (8005.0.0)
+01/24/19 18:49:41 Number of idle job procs: 0
+01/24/19 18:49:41 Node cleanup_namd_wf_0_cori job proc (8005.0.0) completed successfully.
+01/24/19 18:49:41 Node cleanup_namd_wf_0_cori job completed
+01/24/19 18:49:41 Running POST script of Node cleanup_namd_wf_0_cori...
+01/24/19 18:49:41 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+01/24/19 18:49:41 DAG status: 0 (DAG_STATUS_OK)
+01/24/19 18:49:41 Of 9 nodes total:
+01/24/19 18:49:41  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/24/19 18:49:41   ===     ===      ===     ===     ===        ===      ===
+01/24/19 18:49:41     8       0        0       1       0          0        0
+01/24/19 18:49:41 0 job proc(s) currently held
+01/24/19 18:49:41 Initializing user log writer for /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/./namd_wf-0.dag.nodes.log, (8005.0.0)
+01/24/19 18:49:46 Currently monitoring 1 Condor log file(s)
+01/24/19 18:49:46 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node cleanup_namd_wf_0_cori (8005.0.0)
+01/24/19 18:49:46 POST Script of Node cleanup_namd_wf_0_cori completed successfully.
+01/24/19 18:49:46 DAG status: 0 (DAG_STATUS_OK)
+01/24/19 18:49:46 Of 9 nodes total:
+01/24/19 18:49:46  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/24/19 18:49:46   ===     ===      ===     ===     ===        ===      ===
+01/24/19 18:49:46     9       0        0       0       0          0        0
+01/24/19 18:49:46 0 job proc(s) currently held
+01/24/19 18:49:46 All jobs Completed!
+01/24/19 18:49:46 Note: 0 total job deferrals because of -MaxJobs limit (0)
+01/24/19 18:49:46 Note: 0 total job deferrals because of -MaxIdle limit (1000)
+01/24/19 18:49:46 Note: 0 total job deferrals because of node category throttles
+01/24/19 18:49:46 Note: 0 total PRE script deferrals because of -MaxPre limit (20) or DEFER
+01/24/19 18:49:46 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+01/24/19 18:49:46 DAG status: 0 (DAG_STATUS_OK)
+01/24/19 18:49:46 Of 9 nodes total:
+01/24/19 18:49:46  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/24/19 18:49:46   ===     ===      ===     ===     ===        ===      ===
+01/24/19 18:49:46     9       0        0       0       0          0        0
+01/24/19 18:49:46 0 job proc(s) currently held
+01/24/19 18:49:46 Wrote metrics file namd_wf-0.dag.metrics.
+01/24/19 18:49:46 Reporting metrics to Pegasus metrics server(s); output is in namd_wf-0.dag.metrics.out.
+01/24/19 18:49:46 Running command </usr/lib/condor/libexec/condor_dagman_metrics_reporter -f namd_wf-0.dag.metrics -t 100>
+01/24/19 18:49:46 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+01/24/19 18:49:46 **** condor_scheduniv_exec.7996.0 (condor_DAGMAN) pid 1503 EXITING WITH STATUS 0

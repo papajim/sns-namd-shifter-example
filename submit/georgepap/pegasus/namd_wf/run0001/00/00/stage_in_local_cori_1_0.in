@@ -1,0 +1,21 @@
+[
+ { "type": "transfer",
+   "lfn": "production_250.conf",
+   "id": 1,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///home/georgepap/GitHub/papajim/sns-namd-shifter-example/input/production_250.conf", "priority": 100 }
+   ],
+   "dest_urls": [
+     { "site_label": "cori", "url": "gsiftp://corigrid.nersc.gov/global/cscratch1/sd/papajim/georgepap/pegasus/namd_wf/run0001/./production_250.conf" }
+   ] }
+ ,
+ { "type": "transfer",
+   "lfn": "production_200.conf",
+   "id": 2,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///home/georgepap/GitHub/papajim/sns-namd-shifter-example/input/production_200.conf", "priority": 100 }
+   ],
+   "dest_urls": [
+     { "site_label": "cori", "url": "gsiftp://corigrid.nersc.gov/global/cscratch1/sd/papajim/georgepap/pegasus/namd_wf/run0001/./production_200.conf" }
+   ] }
+]

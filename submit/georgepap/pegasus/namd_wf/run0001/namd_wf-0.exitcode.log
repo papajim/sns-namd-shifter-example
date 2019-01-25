@@ -1,0 +1,5 @@
+{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2019-01-24T18:38:23.342321", "name": ".//00/00/create_dir_namd_wf_0_cori.out", "exitcode": 0, "app_exitcode": 0}
+{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2019-01-24T18:38:38.925851", "name": ".//00/00/stage_in_local_cori_0_0.out", "exitcode": 0, "app_exitcode": 0}
+{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2019-01-24T18:38:44.077979", "name": ".//00/00/stage_in_local_cori_1_0.out", "exitcode": 0, "app_exitcode": 0}
+{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2019-01-24T18:49:25.894972", "name": ".//00/00/stage_out_local_cori_1_0.out", "exitcode": 0, "app_exitcode": 0}
+{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2019-01-24T18:49:41.384539", "name": ".//00/00/cleanup_namd_wf_0_cori.out", "exitcode": 0, "app_exitcode": 0}

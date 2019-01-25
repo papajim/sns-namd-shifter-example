@@ -1,0 +1,41 @@
+{
+  "client": "pegasus-plan",
+  "version": "4.8.5dev",
+  "type": "metrics",
+  "start_time": 1.548383890325E9,
+  "end_time": 1.548383893756E9,
+  "duration": 3.431,
+  "exitcode": 0,
+  "root_wf_uuid": "27d08e86-e07e-4636-9dd3-937232b47d66",
+  "wf_uuid": "27d08e86-e07e-4636-9dd3-937232b47d66",
+  "data_config": "sharedfs",
+  "planner_args": "--conf pegasus.properties --dax namd.dax --dir /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit --input-dir /home/georgepap/GitHub/papajim/sns-namd-shifter-example/input --output-dir /home/georgepap/GitHub/papajim/sns-namd-shifter-example/output --sites cori --cleanup leaf --force --submit ",
+  "uses_pmc": false,
+  "wf_metrics": {
+    "compute_tasks": 4,
+    "dax_tasks": 0,
+    "dag_tasks": 0,
+    "total_tasks": 4,
+    "deleted_tasks": 0,
+    "dax_input_files": 8,
+    "dax_inter_files": 6,
+    "dax_output_files": 2,
+    "dax_total_files": 16,
+    "compute_jobs": 4,
+    "clustered_jobs": 0,
+    "si_tx_jobs": 2,
+    "so_tx_jobs": 1,
+    "inter_tx_jobs": 0,
+    "reg_jobs": 0,
+    "cleanup_jobs": 1,
+    "create_dir_jobs": 1,
+    "dax_jobs": 0,
+    "dag_jobs": 0,
+    "chmod_jobs": 0,
+    "total_jobs": 9
+  },
+  "app_metrics": {
+    "name": "namd_example"
+  }
+}
+
