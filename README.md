@@ -7,7 +7,8 @@ Usage
 
     $ myproxy-logon -s nerscca.nersc.gov:7512 -t 72 -T -l YOUR_NERSC_USERNAME
 
-   If you have enabled NERSC's MFA use your PASSWORD+OTP to authenticate yourself. This will retrieve a grid certificate good for 72 hours.
+   If you have enabled NERSC's MFA use your PASSWORD+OTP to authenticate yourself.
+   The above command will retrieve a grid certificate that's valid for 72 hours.
 
 2. Edit sites.xml:
    * Set the path to your scratch directory
