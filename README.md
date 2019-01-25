@@ -10,10 +10,10 @@ Usage
    If you have enabled NERSC's MFA use your PASSWORD+OTP to authenticate yourself. This will retrieve a grid certificate good for 72 hours.
 
 2. Edit sites.xml:
-    ..a. Set the path to your scratch directory
-    ..b. Set the path to your output directory
-    ..c. Set the project number
-
+   * Set the path to your scratch directory
+   * Set the path to your output directory
+   * Set the project number
+    
 3. Run daxgen.py to generate the workflow dax (e.g. test.dax):
 
     $ python daxgen.py test.dax
