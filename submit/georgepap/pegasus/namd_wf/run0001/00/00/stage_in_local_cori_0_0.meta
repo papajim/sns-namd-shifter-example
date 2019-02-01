@@ -1,0 +1,74 @@
+[
+  {
+    "_type": "file", 
+    "_id": "par_all27_prot_lipid.inp", 
+    "_attributes": {
+      "ctime": "2019-01-23T01:27:34.371545", 
+      "checksum.timing": "0.028", 
+      "user": "georgepap", 
+      "checksum.type": "sha256", 
+      "checksum.value": "2a9ddb518f08d422498a96da26142f8277e399d938a684873a9ad628706c6401", 
+      "size": "183182"
+    }
+  }, 
+  {
+    "_type": "file", 
+    "_id": "crd.md18_vmd_autopsf.pdb", 
+    "_attributes": {
+      "ctime": "2019-01-23T01:27:34.371545", 
+      "checksum.timing": "0.027", 
+      "user": "georgepap", 
+      "checksum.type": "sha256", 
+      "checksum.value": "ad150f52e9c47ccc07cac0b593ca09c5f546d3ba02b4513f2b72091b4a5008fc", 
+      "size": "291718"
+    }
+  }, 
+  {
+    "_type": "file", 
+    "_id": "Q42.psf", 
+    "_attributes": {
+      "ctime": "2019-01-23T01:27:34.371545", 
+      "checksum.timing": "0.075", 
+      "user": "georgepap", 
+      "checksum.type": "sha256", 
+      "checksum.value": "0b31a861112803e827690e386fa4b5321788ca81c91c8224836968d1328e935a", 
+      "size": "356814"
+    }
+  }, 
+  {
+    "_type": "file", 
+    "_id": "equilibrate_200.conf", 
+    "_attributes": {
+      "ctime": "2019-01-23T01:27:34.371545", 
+      "checksum.timing": "0.044", 
+      "user": "georgepap", 
+      "checksum.type": "sha256", 
+      "checksum.value": "c156af4233c12a00ffcf174561796b4cbbcf0e06d4863d5b1886cd6d25c18d8f", 
+      "size": "3770"
+    }
+  }, 
+  {
+    "_type": "file", 
+    "_id": "equilibrate_250.conf", 
+    "_attributes": {
+      "ctime": "2019-01-23T01:27:34.371545", 
+      "checksum.timing": "0.019", 
+      "user": "georgepap", 
+      "checksum.type": "sha256", 
+      "checksum.value": "573aff90396ca943eade10671b913b86fbf0c0239020425cec930e2708ceb862", 
+      "size": "3770"
+    }
+  }, 
+  {
+    "_type": "file", 
+    "_id": "init.xsc", 
+    "_attributes": {
+      "ctime": "2019-01-23T01:27:34.371545", 
+      "checksum.timing": "0.020", 
+      "user": "georgepap", 
+      "checksum.type": "sha256", 
+      "checksum.value": "740a4f48f0eae810cb008720793705589278f120b372db43598aa6248639399c", 
+      "size": "223"
+    }
+  }
+]

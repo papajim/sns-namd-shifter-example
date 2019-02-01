@@ -1,26 +1,26 @@
 user georgepap
 grid_dn /DC=gov/DC=nersc/OU=People/CN=Georgios Papadimitriou 74935
 submit_hostname darek.isi.edu
-root_wf_uuid 27d08e86-e07e-4636-9dd3-937232b47d66
-wf_uuid 27d08e86-e07e-4636-9dd3-937232b47d66
+root_wf_uuid 6fc05261-1a3b-492b-8602-87d128b98203
+wf_uuid 6fc05261-1a3b-492b-8602-87d128b98203
 dax /home/georgepap/GitHub/papajim/sns-namd-shifter-example/namd.dax
 dax_label namd_wf
 dax_index 0
 dax_version 3.6
 pegasus_wf_name namd_wf-0
-timestamp 20190124T183810-0800
+timestamp 20190131T162252-0800
 basedir /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit
 submit_dir /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001
-planner /home/georgepap/pegasus-dist/pegasus-4.8.5dev/bin/pegasus-plan
-planner_version 4.8.5dev
-pegasus_build 20181026173507Z
-planner_arguments "--conf pegasus.properties --dax namd.dax --dir /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit --input-dir /home/georgepap/GitHub/papajim/sns-namd-shifter-example/input --output-dir /home/georgepap/GitHub/papajim/sns-namd-shifter-example/output --sites cori --cleanup leaf --force --submit "
+planner /home/georgepap/pegasus-dist/pegasus-4.9.1dev/bin/pegasus-plan
+planner_version 4.9.1dev
+pegasus_build 20190131235651Z
+planner_arguments "--conf pegasus.properties --dax namd.dax --dir /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit --input-dir /home/georgepap/GitHub/papajim/sns-namd-shifter-example/input --output-dir /home/georgepap/GitHub/papajim/sns-namd-shifter-example/output --sites cori --staging-site cori --cleanup leaf --force --submit "
 jsd jobstate.log
 rundir run0001
-bindir /home/georgepap/pegasus-dist/pegasus-4.8.5dev/bin
+bindir /home/georgepap/pegasus-dist/pegasus-4.9.1dev/bin
 vogroup pegasus
 uses_pmc false
-properties pegasus.7001611398943212047.properties
+properties pegasus.7986823405336430324.properties
 condor_log namd_wf-0.log
 dag namd_wf-0.dag
 type dag

@@ -35,8 +35,8 @@ for temperature in temperatures:
     prod_conf = File("production_%s.conf" % temperature)
     prod_dcd = File("production_%s.dcd" % temperature)
 
-    eqjob = Job("shifter", node_label="shifter_namd_eq_%s" % temperature)
-    eqjob.addArguments("--image=docker:papajim/namd_image:latest", "namd2", "+p 32", eq_conf)
+    eqjob = Job("namd2", node_label="namd_eq_%s" % temperature)
+    eqjob.addArguments("+p 32", eq_conf)
     eqjob.uses(eq_conf, link=Link.INPUT)
     eqjob.uses(structure, link=Link.INPUT)
     eqjob.uses(coordinates, link=Link.INPUT)
@@ -49,8 +49,8 @@ for temperature in temperatures:
     eqjob.profile("pegasus", "exitcode.successmsg", "End of program")
     dax.addJob(eqjob)
 
-    prodjob = Job("shifter", node_label="shifter_namd_prod_%s" % temperature)
-    prodjob.addArguments("--image=docker:papajim/namd_image:latest", "namd2", "+p 32", prod_conf)
+    prodjob = Job("namd2", node_label="namd_prod_%s" % temperature)
+    prodjob.addArguments("+p 32", prod_conf)
     prodjob.uses(prod_conf, link=Link.INPUT)
     prodjob.uses(structure, link=Link.INPUT)
     prodjob.uses(coordinates, link=Link.INPUT)

@@ -20,6 +20,7 @@ pegasus-plan --conf pegasus.properties \
     --input-dir $DIR/input \
     --output-dir $DIR/output \
     --sites cori \
+    --staging-site cori \
     --cleanup leaf \
     --force \
     --submit

@@ -1,10 +1,26 @@
-tr shifter {
+cont namd_image{
+     # can be either docker or singularity
+     type "shifter"
+
+     # URL to image in a docker|singularity hub OR
+     # URL to an existing docker image exported as a tar file or
+     # singularity image
+     #image "docker:///papajim/namd_image:latest" 
+     image "shifter:///papajim/namd_image:latest" 
+
+     # optional site attribute to tell pegasus which site tar file
+     # exists. useful for handling file URL's correctly
+     image_site "cori"
+
+     mount "/Volumes/Work/lfs1:/shared-data/:ro"
+}
+
+tr namd2 {
     site cori {
-        pfn "/usr/bin/shifter"
+        pfn "/opt/namd2"
         arch "x86_64"
         os "LINUX"
         type "INSTALLED"
-        profile pegasus "gridstart" "NoGridStart"
+		container "namd_image"
     }
 }
-
