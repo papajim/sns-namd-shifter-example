@@ -1,12 +1,11 @@
-Pegasus LIB /home/georgepap/pegasus-dist/pegasus-4.9.1dev/lib/python2.7/dist-packages
-Pegasus LIB /home/georgepap/pegasus-dist/pegasus-4.9.1dev/lib/pegasus/externals/python
-Pegasus BIN_DIR /home/georgepap/pegasus-dist/pegasus-4.9.1dev/bin
-Pegasus DAGMAN is  /home/georgepap/pegasus-dist/pegasus-4.9.1dev/bin/pegasus-dagman
-2019-01-31 16:29:36,456:INFO:pegasus-dagman(138): DAGMAN_COPY_TO_SPOOL is set to false
+Pegasus LIB /home/georgepap/pegasus-dist/pegasus-5.0.0dev/lib/python2.7/dist-packages
+Pegasus LIB /home/georgepap/pegasus-dist/pegasus-5.0.0dev/lib/pegasus/externals/python
+Pegasus BIN_DIR /home/georgepap/pegasus-dist/pegasus-5.0.0dev/bin
+Pegasus DAGMAN is  /home/georgepap/pegasus-dist/pegasus-5.0.0dev/bin/pegasus-dagman
+2019-02-02 01:09:48,041:INFO:pegasus-dagman(138): DAGMAN_COPY_TO_SPOOL is set to false
 
-2019-01-31 16:29:36,459:INFO:pegasus-dagman(98): Launched Dagman with Pid 16084
-2019-01-31 16:29:36,461:INFO:pegasus-dagman(123): Launched Monitord with Pid 16085
-2019-01-31 16:34:05,948:INFO:pegasus-dagman(147): pegasus-dagman caught SIGNAL 10
+2019-02-02 01:09:48,044:INFO:pegasus-dagman(98): Launched Dagman with Pid 91544
+2019-02-02 01:09:48,047:INFO:pegasus-dagman(123): Launched Monitord with Pid 91545
 Executing condor dagman ... 
-2019-01-31 16:34:20,964:INFO:pegasus-dagman(248): Dagman exited with code 2
-2019-01-31 16:34:20,964:INFO:pegasus-dagman(249): Monitord exited with code 0
+2019-02-02 01:17:33,465:INFO:pegasus-dagman(248): Dagman exited with code 0
+2019-02-02 01:17:33,465:INFO:pegasus-dagman(249): Monitord exited with code 0

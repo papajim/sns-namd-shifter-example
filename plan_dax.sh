@@ -22,5 +22,5 @@ pegasus-plan --conf pegasus.properties \
     --sites cori \
     --staging-site cori \
     --cleanup leaf \
-    --force \
-    --submit
+    --force #\
+#    --submit

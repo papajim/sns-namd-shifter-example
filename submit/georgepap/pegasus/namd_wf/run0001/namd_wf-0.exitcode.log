@@ -1,3 +1,8 @@
-{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2019-01-31T16:23:05.306997", "name": ".//00/00/create_dir_namd_wf_0_cori.out", "exitcode": 0, "app_exitcode": 0}
-{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2019-01-31T16:23:25.949016", "name": ".//00/00/stage_in_local_cori_1_0.out", "exitcode": 0, "app_exitcode": 0}
-{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2019-01-31T16:23:25.949542", "name": ".//00/00/stage_in_local_cori_0_0.out", "exitcode": 0, "app_exitcode": 0}
+{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2019-02-02T01:09:57.472161", "name": ".//00/00/create_dir_namd_wf_0_cori.out", "exitcode": 0, "app_exitcode": 0}
+{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2019-02-02T01:10:18.116982", "name": ".//00/00/stage_in_local_cori_1_0.out", "exitcode": 0, "app_exitcode": 0}
+{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2019-02-02T01:10:18.117183", "name": ".//00/00/stage_in_local_cori_0_0.out", "exitcode": 0, "app_exitcode": 0}
+{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2019-02-02T01:11:43.791355", "name": ".//00/00/namd2_ID0000003.out", "exitcode": 0, "app_exitcode": 0}
+{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2019-02-02T01:13:44.248909", "name": ".//00/00/namd2_ID0000001.out", "exitcode": 0, "app_exitcode": 0}
+{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2019-02-02T01:16:29.776147", "name": ".//00/00/namd2_ID0000004.out", "exitcode": 0, "app_exitcode": 0}
+{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2019-02-02T01:16:50.052119", "name": ".//00/00/namd2_ID0000002.out", "exitcode": 0, "app_exitcode": 0}
+{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2019-02-02T01:17:04.579371", "name": ".//00/00/stage_out_local_cori_1_0.out", "exitcode": 0, "app_exitcode": 0}

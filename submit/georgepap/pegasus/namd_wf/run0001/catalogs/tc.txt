@@ -11,16 +11,16 @@ cont namd_image{
      # optional site attribute to tell pegasus which site tar file
      # exists. useful for handling file URL's correctly
      image_site "cori"
-
-     mount "/Volumes/Work/lfs1:/shared-data/:ro"
 }
 
 tr namd2 {
     site cori {
-        pfn "/opt/namd2"
+        pfn "/opt/NAMD_2.12_Linux-x86_64-multicore/namd2"
         arch "x86_64"
         os "LINUX"
         type "INSTALLED"
 		container "namd_image"
+        profile globus "maxTime" "20"
+        profile pegasus "exitcode.successmsg" "End of program"
     }
 }

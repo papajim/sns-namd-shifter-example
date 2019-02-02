@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
-pegasus_lite_version_major="4"
-pegasus_lite_version_minor="9"
-pegasus_lite_version_patch="1dev"
+pegasus_lite_version_major="5"
+pegasus_lite_version_minor="0"
+pegasus_lite_version_patch="0dev"
 pegasus_lite_enforce_strict_wp_check="true"
 pegasus_lite_version_allow_wp_auto_download="true"
 
@@ -53,14 +53,14 @@ echo "PATH in container is set to is set to \$PATH"  1>&2
 
 echo -e "\n###################### Staging in input data and executables ######################"  1>&2
 # stage in data and executables
-pegasus-transfer --threads 1  1>&2 << 'eof'
+pegasus-transfer --threads 1  --symlink  1>&2 << 'eof'
 [
  { "type": "transfer",
    "linkage": "input",
    "lfn": "par_all27_prot_lipid.inp",
    "id": 1,
    "src_urls": [
-     { "site_label": "cori", "url": "gsiftp://corigrid.nersc.gov/global/cscratch1/sd/papajim/georgepap/pegasus/namd_wf/run0001/00/00/par_all27_prot_lipid.inp", "checkpoint": "false" }
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgepap/pegasus/namd_wf/run0001/00/00/par_all27_prot_lipid.inp", "checkpoint": "false" }
    ],
    "dest_urls": [
      { "site_label": "cori", "url": "file:///scratch/par_all27_prot_lipid.inp" }
@@ -71,7 +71,7 @@ pegasus-transfer --threads 1  1>&2 << 'eof'
    "lfn": "crd.md18_vmd_autopsf.pdb",
    "id": 2,
    "src_urls": [
-     { "site_label": "cori", "url": "gsiftp://corigrid.nersc.gov/global/cscratch1/sd/papajim/georgepap/pegasus/namd_wf/run0001/00/00/crd.md18_vmd_autopsf.pdb", "checkpoint": "false" }
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgepap/pegasus/namd_wf/run0001/00/00/crd.md18_vmd_autopsf.pdb", "checkpoint": "false" }
    ],
    "dest_urls": [
      { "site_label": "cori", "url": "file:///scratch/crd.md18_vmd_autopsf.pdb" }
@@ -82,7 +82,7 @@ pegasus-transfer --threads 1  1>&2 << 'eof'
    "lfn": "equilibrate_250.restart.xsc",
    "id": 3,
    "src_urls": [
-     { "site_label": "cori", "url": "gsiftp://corigrid.nersc.gov/global/cscratch1/sd/papajim/georgepap/pegasus/namd_wf/run0001/00/00/equilibrate_250.restart.xsc", "checkpoint": "false" }
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgepap/pegasus/namd_wf/run0001/00/00/equilibrate_250.restart.xsc", "checkpoint": "false" }
    ],
    "dest_urls": [
      { "site_label": "cori", "url": "file:///scratch/equilibrate_250.restart.xsc" }
@@ -93,7 +93,7 @@ pegasus-transfer --threads 1  1>&2 << 'eof'
    "lfn": "production_250.conf",
    "id": 4,
    "src_urls": [
-     { "site_label": "cori", "url": "gsiftp://corigrid.nersc.gov/global/cscratch1/sd/papajim/georgepap/pegasus/namd_wf/run0001/00/00/production_250.conf", "checkpoint": "false" }
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgepap/pegasus/namd_wf/run0001/00/00/production_250.conf", "checkpoint": "false" }
    ],
    "dest_urls": [
      { "site_label": "cori", "url": "file:///scratch/production_250.conf" }
@@ -104,7 +104,7 @@ pegasus-transfer --threads 1  1>&2 << 'eof'
    "lfn": "equilibrate_250.restart.coor",
    "id": 5,
    "src_urls": [
-     { "site_label": "cori", "url": "gsiftp://corigrid.nersc.gov/global/cscratch1/sd/papajim/georgepap/pegasus/namd_wf/run0001/00/00/equilibrate_250.restart.coor", "checkpoint": "false" }
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgepap/pegasus/namd_wf/run0001/00/00/equilibrate_250.restart.coor", "checkpoint": "false" }
    ],
    "dest_urls": [
      { "site_label": "cori", "url": "file:///scratch/equilibrate_250.restart.coor" }
@@ -115,7 +115,7 @@ pegasus-transfer --threads 1  1>&2 << 'eof'
    "lfn": "equilibrate_250.restart.vel",
    "id": 6,
    "src_urls": [
-     { "site_label": "cori", "url": "gsiftp://corigrid.nersc.gov/global/cscratch1/sd/papajim/georgepap/pegasus/namd_wf/run0001/00/00/equilibrate_250.restart.vel", "checkpoint": "false" }
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgepap/pegasus/namd_wf/run0001/00/00/equilibrate_250.restart.vel", "checkpoint": "false" }
    ],
    "dest_urls": [
      { "site_label": "cori", "url": "file:///scratch/equilibrate_250.restart.vel" }
@@ -126,7 +126,7 @@ pegasus-transfer --threads 1  1>&2 << 'eof'
    "lfn": "Q42.psf",
    "id": 7,
    "src_urls": [
-     { "site_label": "cori", "url": "gsiftp://corigrid.nersc.gov/global/cscratch1/sd/papajim/georgepap/pegasus/namd_wf/run0001/00/00/Q42.psf", "checkpoint": "false" }
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgepap/pegasus/namd_wf/run0001/00/00/Q42.psf", "checkpoint": "false" }
    ],
    "dest_urls": [
      { "site_label": "cori", "url": "file:///scratch/Q42.psf" }
@@ -144,7 +144,7 @@ set +e
 job_ec=0
 echo -e "\n#########################[Container] Launching user task #########################"  1>&2
 
-pegasus-kickstart  -n namd2 -N ID0000004 -R cori  -s production_250.dcd=production_250.dcd -L namd_wf -T 2019-01-31T16:21:05-08:00 /opt/namd2 +p 32 production_250.conf
+pegasus-kickstart  -n namd2 -N ID0000004 -R cori  -s production_250.dcd=production_250.dcd -L namd_wf -T 2019-02-02T01:07:07-08:00 /opt/NAMD_2.12_Linux-x86_64-multicore/namd2 +p 32 production_250.conf
 set -e
 echo -e "\n############################ Staging out output files ############################"  1>&2
 # stage out
@@ -158,7 +158,7 @@ pegasus-transfer --threads 1  1>&2 << 'eof'
      { "site_label": "cori", "url": "file:///scratch/production_250.dcd", "checkpoint": "false" }
    ],
    "dest_urls": [
-     { "site_label": "cori", "url": "gsiftp://corigrid.nersc.gov/global/cscratch1/sd/papajim/georgepap/pegasus/namd_wf/run0001/00/00/production_250.dcd" }
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgepap/pegasus/namd_wf/run0001/00/00/production_250.dcd" }
    ] }
 ]
 eof
@@ -176,7 +176,7 @@ set +e
 shifter_init papajim/namd_image:latest
 job_ec=$(($job_ec + $?))
 
-shifter --image papajim/namd_image:latest --volume /Volumes/Work/lfs1:/shared-data/:ro;$PWD:/scratch --workdir=/scratch papajim/namd_image:latest ./namd2_ID0000004-cont.sh 
+shifter --image papajim/namd_image:latest --volume $PWD:/scratch --workdir=/scratch ./namd2_ID0000004-cont.sh 
 job_ec=$(($job_ec + $?))
 
 

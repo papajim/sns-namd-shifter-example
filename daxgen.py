@@ -45,8 +45,6 @@ for temperature in temperatures:
     eqjob.uses(eq_coord, link=Link.OUTPUT, transfer=False, register=False)
     eqjob.uses(eq_xsc, link=Link.OUTPUT, transfer=False, register=False)
     eqjob.uses(eq_vel, link=Link.OUTPUT, transfer=False, register=False)
-    eqjob.profile("globus", "maxTime", "20")
-    eqjob.profile("pegasus", "exitcode.successmsg", "End of program")
     dax.addJob(eqjob)
 
     prodjob = Job("namd2", node_label="namd_prod_%s" % temperature)
@@ -59,8 +57,6 @@ for temperature in temperatures:
     prodjob.uses(eq_xsc, link=Link.INPUT)
     prodjob.uses(eq_vel, link=Link.INPUT)
     prodjob.uses(prod_dcd, link=Link.OUTPUT, transfer=True, register=False)
-    prodjob.profile("globus", "maxTime", "20")
-    prodjob.profile("pegasus", "exitcode.successmsg", "End of program")
     dax.addJob(prodjob)
     dax.depends(prodjob, eqjob)
 

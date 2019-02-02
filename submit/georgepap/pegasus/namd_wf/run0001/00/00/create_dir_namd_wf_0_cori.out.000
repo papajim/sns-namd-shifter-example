@@ -1,12 +1,12 @@
-2019-01-31 16:23:01,618    INFO:  Reading URL pairs from stdin
-2019-01-31 16:23:01,618    INFO:  1 transfers loaded
-2019-01-31 16:23:01,618    INFO:  PATH=/usr/bin:/bin
-2019-01-31 16:23:01,618    INFO:  LD_LIBRARY_PATH=
-2019-01-31 16:23:01,688    INFO:  --------------------------------------------------------------------------------
-2019-01-31 16:23:01,696    INFO:  Starting transfers - attempt 1
-2019-01-31 16:23:03,699    INFO:  Command 'gfal-mkdir' not found in the current environment
-2019-01-31 16:23:03,700    INFO:  Tool found: globus-url-copy   Version: N/A   Path: /usr/bin/globus-url-copy
-2019-01-31 16:23:03,701    INFO:  /usr/bin/globus-url-copy -create-dest file:///dev/null gsiftp://corigrid.nersc.gov/global/cscratch1/sd/papajim/georgepap/pegasus/namd_wf/run0001/.create-dir
-2019-01-31 16:23:05,070    INFO:  --------------------------------------------------------------------------------
-2019-01-31 16:23:05,070    INFO:  Stats: no local files in the transfer set
-2019-01-31 16:23:05,070    INFO:  All transfers completed successfully.
+2019-02-02 01:09:53,748    INFO:  Reading URL pairs from stdin
+2019-02-02 01:09:53,749    INFO:  1 transfers loaded
+2019-02-02 01:09:53,749    INFO:  PATH=/usr/bin:/bin
+2019-02-02 01:09:53,749    INFO:  LD_LIBRARY_PATH=
+2019-02-02 01:09:53,769    INFO:  --------------------------------------------------------------------------------
+2019-02-02 01:09:53,770    INFO:  Starting transfers - attempt 1
+2019-02-02 01:09:55,772    INFO:  Command 'gfal-mkdir' not found in the current environment
+2019-02-02 01:09:55,773    INFO:  Tool found: globus-url-copy   Version: N/A   Path: /usr/bin/globus-url-copy
+2019-02-02 01:09:55,774    INFO:  /usr/bin/globus-url-copy -create-dest file:///dev/null gsiftp://corigrid.nersc.gov/global/cscratch1/sd/papajim/georgepap/pegasus/namd_wf/run0001/.create-dir
+2019-02-02 01:09:57,193    INFO:  --------------------------------------------------------------------------------
+2019-02-02 01:09:57,193    INFO:  Stats: no local files in the transfer set
+2019-02-02 01:09:57,194    INFO:  All transfers completed successfully.

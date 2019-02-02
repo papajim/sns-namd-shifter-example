@@ -4,7 +4,7 @@
     "_id": "production_250.conf", 
     "_attributes": {
       "ctime": "2019-01-23T01:27:34.371545", 
-      "checksum.timing": "0.027", 
+      "checksum.timing": "0.021", 
       "user": "georgepap", 
       "checksum.type": "sha256", 
       "checksum.value": "dc5dc14ceb21cfa771712d115fe9c340d80a32a78ac93730e0019c0680b52c5a", 
@@ -16,7 +16,7 @@
     "_id": "production_200.conf", 
     "_attributes": {
       "ctime": "2019-01-23T01:27:34.371545", 
-      "checksum.timing": "0.019", 
+      "checksum.timing": "0.018", 
       "user": "georgepap", 
       "checksum.type": "sha256", 
       "checksum.value": "bb0dfb5c0feb0a62c196171980b54c08aa7b43a315b652b3277f74f8ed06850a", 

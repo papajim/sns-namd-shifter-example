@@ -1,10 +1,10 @@
 {
-  "root_workflow_uuid": "6fc05261-1a3b-492b-8602-87d128b98203",
-  "workflow_uuid": "6fc05261-1a3b-492b-8602-87d128b98203",
+  "root_workflow_uuid": "feb34f20-4d77-43de-a33d-7830a17d3347",
+  "workflow_uuid": "feb34f20-4d77-43de-a33d-7830a17d3347",
   "wf_metadata": {
     "dax.api": "python",
     "creator": "georgepap@darek",
-    "created": "Thu Jan 31 16:21:05 2019",
+    "created": "Sat Feb  2 01:07:07 2019",
     "name": "NAMD Example Workflow"
   },
   "graph": {

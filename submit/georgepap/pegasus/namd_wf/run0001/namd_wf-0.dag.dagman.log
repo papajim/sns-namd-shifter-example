@@ -1,28 +1,15 @@
-000 (8006.000.000) 01/31 16:22:55 Job submitted from host: <127.0.0.1:41831?addrs=127.0.0.1-41831>
+000 (8078.000.000) 02/02 01:09:47 Job submitted from host: <127.0.0.1:41831?addrs=127.0.0.1-41831>
 ...
-001 (8006.000.000) 01/31 16:22:55 Job executing on host: <127.0.0.1:41831?addrs=127.0.0.1-41831>
+001 (8078.000.000) 02/02 01:09:47 Job executing on host: <127.0.0.1:41831?addrs=127.0.0.1-41831>
 ...
-004 (8006.000.000) 01/31 16:27:30 Job was evicted.
-	(0) Job was not checkpointed.
+005 (8078.000.000) 02/02 01:17:33 Job terminated.
+	(1) Normal termination (return value 0)
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
 	0  -  Run Bytes Sent By Job
 	0  -  Run Bytes Received By Job
-...
-009 (8006.000.000) 01/31 16:27:30 Job was aborted by the user.
-	via condor_rm (by user georgepap)
-...
-000 (8012.000.000) 01/31 16:29:36 Job submitted from host: <127.0.0.1:41831?addrs=127.0.0.1-41831>
-...
-001 (8012.000.000) 01/31 16:29:36 Job executing on host: <127.0.0.1:41831?addrs=127.0.0.1-41831>
-...
-004 (8012.000.000) 01/31 16:34:20 Job was evicted.
-	(0) Job was not checkpointed.
-		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
-		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
-	0  -  Run Bytes Sent By Job
-	0  -  Run Bytes Received By Job
-...
-009 (8012.000.000) 01/31 16:34:21 Job was aborted by the user.
-	via condor_rm (by user georgepap)
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
 ...

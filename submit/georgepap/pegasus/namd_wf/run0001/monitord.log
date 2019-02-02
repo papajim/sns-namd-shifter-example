@@ -1,25 +1,29 @@
-2019-01-31 16:29:36,840:INFO:pegasus-monitord(70): pegasus-monitord starting - pid 16085 
-2019-01-31 16:29:36,848:INFO:pegasus-monitord(322): Final Command line options are: ['-N', 'namd_wf-0.dag.dagman.out']
-2019-01-31 16:29:36,849:INFO:Pegasus.monitoring.event_output(459): Connecting workflow event sink to sqlite:////home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/namd_wf-0.stampede.db
-2019-01-31 16:29:36,893:INFO:Pegasus.monitoring.event_output(517): output type=DB namespace=stampede. name=sqlite:////home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/namd_wf-0.stampede.db
-2019-01-31 16:29:36,893:INFO:Pegasus.monitoring.event_output(459): Connecting workflow event sink to sqlite:////home/georgepap/.pegasus/workflow.db
-2019-01-31 16:29:36,930:INFO:Pegasus.monitoring.event_output(517): output type=DB namespace=dashboard. name=sqlite:////home/georgepap/.pegasus/workflow.db
-2019-01-31 16:29:36,930:INFO:pegasus-monitord(1016): monitord started in fast start mode
-2019-01-31 16:29:36,942:INFO:Pegasus.monitoring.workflow(952): Appending to existing jobstate.log replay_mode 0 previous_processed_line 0
-2019-01-31 16:29:36,942:INFO:Pegasus.monitoring.notifications(394): loading notifications from /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/namd_wf-0.notify
-2019-01-31 16:29:36,943:INFO:Pegasus.monitoring.workflow(170): Parsing DAG file /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/namd_wf-0.dag
-2019-01-31 16:29:36,945:INFO:pegasus-monitord(783): Using DAGMan version 8.4.9 80409
-2019-01-31 16:29:36,945:INFO:pegasus-monitord(759): DAGMan runs at pid 16084
-2019-01-31 16:29:36,949:INFO:pegasus-monitord(765): using dag namd_wf-0.dag
-2019-01-31 16:29:36,949:INFO:Pegasus.monitoring.workflow(680): DAGMan starting with condor id 8012.0
-2019-01-31 16:34:06,550:WARNING:pegasus-monitord(829): DAGMan was aborted for workflow running in directory /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001
-2019-01-31 16:34:06,552:INFO:pegasus-monitord(739): DAGMan namd_wf-0.dag finished with exit code 2
-2019-01-31 16:34:07,646:INFO:pegasus-monitord(1175): workflow /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/namd_wf-0.dag.dagman.out ended
-2019-01-31 16:34:07,647:INFO:Pegasus.monitoring.workflow(1121): recovery file deleted: /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/monitord.recover
-2019-01-31 16:34:07,647:INFO:pegasus-monitord(1349): finishing workflow: /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/namd_wf-0.dag.dagman.out
-2019-01-31 16:34:07,647:INFO:pegasus-monitord(1401): finishing notifications...
-2019-01-31 16:34:07,647:INFO:pegasus-monitord(1406): monitord process 16085 exiting with 0
-2019-01-31 16:34:07,648:INFO:pegasus-monitord(185): DB flushing beginning
-2019-01-31 16:34:07,648:INFO:Pegasus.db.workflow_loader.WorkflowLoader(1100): Executing final flush
-2019-01-31 16:34:07,705:INFO:Pegasus.db.dashboard_loader.DashboardLoader(353): Executing final flush
-2019-01-31 16:34:07,705:INFO:pegasus-monitord(199): DB flushing ended
+2019-02-02 01:09:48,427:INFO:pegasus-monitord(70): pegasus-monitord starting - pid 91545 
+2019-02-02 01:09:48,435:INFO:pegasus-monitord(322): Final Command line options are: ['-N', 'namd_wf-0.dag.dagman.out']
+2019-02-02 01:09:48,436:INFO:Pegasus.monitoring.event_output(459): Connecting workflow event sink to sqlite:////home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/namd_wf-0.stampede.db
+Created Pegasus database in: sqlite:////home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/namd_wf-0.stampede.db
+2019-02-02 01:09:53,364:INFO:Pegasus.monitoring.event_output(517): output type=DB namespace=stampede. name=sqlite:////home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/namd_wf-0.stampede.db
+2019-02-02 01:09:53,364:INFO:Pegasus.monitoring.event_output(459): Connecting workflow event sink to sqlite:////home/georgepap/.pegasus/workflow.db
+2019-02-02 01:09:53,401:INFO:Pegasus.monitoring.event_output(517): output type=DB namespace=dashboard. name=sqlite:////home/georgepap/.pegasus/workflow.db
+2019-02-02 01:09:53,401:INFO:pegasus-monitord(1016): monitord started in fast start mode
+2019-02-02 01:09:53,458:INFO:Pegasus.monitoring.workflow(363): cannot open state file /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/monitord.info, continuing without state...
+2019-02-02 01:09:53,458:INFO:Pegasus.monitoring.workflow(944): creating new file /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/jobstate.log
+2019-02-02 01:09:53,458:INFO:Pegasus.monitoring.workflow(952): Appending to existing jobstate.log replay_mode 0 previous_processed_line 0
+2019-02-02 01:09:53,458:INFO:Pegasus.monitoring.notifications(394): loading notifications from /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/namd_wf-0.notify
+2019-02-02 01:09:54,158:INFO:Pegasus.monitoring.workflow(170): Parsing DAG file /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/namd_wf-0.dag
+2019-02-02 01:09:54,159:INFO:pegasus-monitord(783): Using DAGMan version 8.4.9 80409
+2019-02-02 01:09:54,159:INFO:pegasus-monitord(759): DAGMan runs at pid 91544
+2019-02-02 01:09:54,163:INFO:pegasus-monitord(765): using dag namd_wf-0.dag
+2019-02-02 01:09:54,163:INFO:Pegasus.monitoring.workflow(680): DAGMan starting with condor id 8078.0
+2019-02-02 01:16:35,673:WARNING:Pegasus.monitoring.workflow(1434): truncating stdout for job namd2_ID0000004
+2019-02-02 01:16:55,439:WARNING:Pegasus.monitoring.workflow(1434): truncating stdout for job namd2_ID0000002
+2019-02-02 01:17:20,688:INFO:pegasus-monitord(739): DAGMan namd_wf-0.dag finished with exit code 0
+2019-02-02 01:17:21,793:INFO:pegasus-monitord(1175): workflow /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/namd_wf-0.dag.dagman.out ended
+2019-02-02 01:17:21,794:INFO:Pegasus.monitoring.workflow(1121): recovery file deleted: /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/monitord.recover
+2019-02-02 01:17:21,794:INFO:pegasus-monitord(1349): finishing workflow: /home/georgepap/GitHub/papajim/sns-namd-shifter-example/submit/georgepap/pegasus/namd_wf/run0001/namd_wf-0.dag.dagman.out
+2019-02-02 01:17:21,794:INFO:pegasus-monitord(1401): finishing notifications...
+2019-02-02 01:17:21,794:INFO:pegasus-monitord(1406): monitord process 91545 exiting with 0
+2019-02-02 01:17:21,794:INFO:pegasus-monitord(185): DB flushing beginning
+2019-02-02 01:17:21,795:INFO:Pegasus.db.workflow_loader.WorkflowLoader(1100): Executing final flush
+2019-02-02 01:17:22,031:INFO:Pegasus.db.dashboard_loader.DashboardLoader(353): Executing final flush
+2019-02-02 01:17:22,031:INFO:pegasus-monitord(199): DB flushing ended

@@ -1,0 +1,38 @@
+[
+  {
+    "_type": "file", 
+    "_id": "equilibrate_250.restart.coor", 
+    "_attributes": {
+      "ctime": "2019-02-02T09:11:23+00:00", 
+      "checksum.timing": "0.017", 
+      "user": "papajim", 
+      "checksum.type": "sha256", 
+      "checksum.value": "d61a2cb7f0c857e3c8eaef650cd2aa3f24a22233ac8ff03b5273662cce06eae1", 
+      "size": "88612"
+    }
+  }, 
+  {
+    "_type": "file", 
+    "_id": "equilibrate_250.restart.vel", 
+    "_attributes": {
+      "ctime": "2019-02-02T09:11:23+00:00", 
+      "checksum.timing": "0.017", 
+      "user": "papajim", 
+      "checksum.type": "sha256", 
+      "checksum.value": "8a92eae973a0924a516a0526f10a18b89c10b85a7ca5f2a2eec09ba38695b337", 
+      "size": "88612"
+    }
+  }, 
+  {
+    "_type": "file", 
+    "_id": "equilibrate_250.restart.xsc", 
+    "_attributes": {
+      "ctime": "2019-02-02T09:11:23+00:00", 
+      "checksum.timing": "0.017", 
+      "user": "papajim", 
+      "checksum.type": "sha256", 
+      "checksum.value": "a7ab8e828d94defeeb7afa12c3d9e91be3a1cd54d2cc98ac895dfb2347a3273b", 
+      "size": "261"
+    }
+  }
+]
