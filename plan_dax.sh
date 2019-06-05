@@ -17,10 +17,9 @@ DAXFILE=$1
 pegasus-plan --conf pegasus.properties \
     --dax $DAXFILE \
     --dir $DIR/submit \
-    --input-dir $DIR/input \
-    --output-dir $DIR/output \
     --sites cori \
     --staging-site cori \
+    --output-site cori \
     --cleanup leaf \
     --force #\
 #    --submit

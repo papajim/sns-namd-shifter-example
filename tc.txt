@@ -24,3 +24,12 @@ tr namd2 {
         profile pegasus "exitcode.successmsg" "End of program"
     }
 }
+
+tr pegasus::transfer {
+   site cori {
+        arch "x86_64"
+        os "LINUX"
+        type "INSTALLED"
+        #profile env "PATH" "/usr/common/mss/bin:$PATH"
+   }
+}

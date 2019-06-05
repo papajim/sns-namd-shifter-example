@@ -8,12 +8,12 @@
         <grid type="gt5" contact="corigrid.nersc.gov/jobmanager" scheduler="Fork" jobtype="auxillary"/>
         <grid type="gt5" contact="corigrid.nersc.gov/jobmanager-slurm" scheduler="slurm" jobtype="compute"/>
         <directory type="shared-scratch" path="/global/cscratch1/sd/papajim">
-            <file-server operation="all" url="gsiftp://corigrid.nersc.gov/global/cscratch1/sd/papajim"/>
+            <file-server operation="all" url="file:///global/cscratch1/sd/papajim"/>
         </directory>
         <directory type="shared-storage" path="/project/projectdirs/m2187/papajim/sns-wf-test">
-            <file-server operation="all" url="gsiftp://corigrid.nersc.gov/project/projectdirs/m2187/papajim/sns-wf-test" />
+            <file-server operation="all" url="file:///project/projectdirs/m2187/papajim/sns-wf-test" />
         </directory>
-        <profile namespace="env" key="PEGASUS_HOME">/project/projectdirs/m2187/sns-software/pegasus-4.9.0dev</profile>
+        <profile namespace="env" key="PEGASUS_HOME">/global/common/software/m2187/pegasus-4.9.2dev</profile>
         <profile namespace="globus" key="project">m2187</profile>
         <profile namespace="globus" key="queue">debug</profile>
     </site>

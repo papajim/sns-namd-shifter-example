@@ -1,0 +1,8 @@
+equilibrate_200.conf       hpss:///home/p/papajim/shifter_test_namd_input.tar/equilibrate_200.conf           site="cori_hpss"
+equilibrate_250.conf       hpss:///home/p/papajim/shifter_test_namd_input.tar/equilibrate_250.conf           site="cori_hpss"
+production_200.conf        hpss:///home/p/papajim/shifter_test_namd_input.tar/production_200.conf            site="cori_hpss"
+production_250.conf        hpss:///home/p/papajim/shifter_test_namd_input.tar/production_250.conf            site="cori_hpss"
+Q42.psf                    hpss:///home/p/papajim/shifter_test_namd_input.tar/Q42.psf                        site="cori_hpss"
+crd.md18_vmd_autopsf.pdb   hpss:///home/p/papajim/shifter_test_namd_input.tar/crd.md18_vmd_autopsf.pdb       site="cori_hpss"
+init.xsc                   hpss:///home/p/papajim/shifter_test_namd_input.tar/init.xsc                       site="cori_hpss"
+par_all27_prot_lipid.inp   hpss:///home/p/papajim/shifter_test_namd_input.tar/par_all27_prot_lipid.inp       site="cori_hpss"
