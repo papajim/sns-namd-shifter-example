@@ -5,16 +5,24 @@
              version="4.0">
 
     <site handle="cori" arch="x86_64" os="LINUX">
-        <grid type="gt5" contact="corigrid.nersc.gov/jobmanager" scheduler="Fork" jobtype="auxillary"/>
-        <grid type="gt5" contact="corigrid.nersc.gov/jobmanager-slurm" scheduler="slurm" jobtype="compute"/>
+        <grid type="batch" contact="papajim@cori.nersc.gov" scheduler="slurm" jobtype="auxillary"/>
+        <grid type="batch" contact="papajim@cori.nersc.gov" scheduler="slurm" jobtype="compute"/>
+        
         <directory type="shared-scratch" path="/global/cscratch1/sd/papajim">
             <file-server operation="all" url="file:///global/cscratch1/sd/papajim"/>
         </directory>
-        <directory type="shared-storage" path="/project/projectdirs/m2187/papajim/sns-wf-test">
-            <file-server operation="all" url="file:///project/projectdirs/m2187/papajim/sns-wf-test" />
+
+        <directory type="shared-storage" path="/global/project/projectdirs/m2187/papajim/sns-wf-test">
+            <file-server operation="all" url="file:///global/project/projectdirs/m2187/papajim/sns-wf-test"/>
         </directory>
-        <profile namespace="env" key="PEGASUS_HOME">/global/common/software/m2187/pegasus-4.9.2dev</profile>
-        <profile namespace="globus" key="project">m2187</profile>
-        <profile namespace="globus" key="queue">debug</profile>
+        
+        <!-- SSH is the style to use for Bosco SSH submits -->
+        <profile namespace="pegasus" key="style">ssh</profile>
+        <!-- works around bug in the HTCondor GAHP, that does not set the remote directory -->
+        <profile namespace="pegasus" key="change.dir">true</profile>
+        
+        <profile namespace="env" key="PEGASUS_HOME">/global/common/software/m2187/pegasus/pegasus-4.9.2dev</profile>
+
+        <profile namespace="pegasus" key="project">m2187</profile>
     </site>
 </sitecatalog>
