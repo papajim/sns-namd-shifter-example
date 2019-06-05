@@ -47,8 +47,8 @@ tr pegasus::dirmanager {
         os "LINUX"
         type "INSTALLED"
         profile pegasus "queue" "xfer"
-        profile pegasus "runtime" "120"
-        profile pegasus "glite.arguments" "--licenses=SCRATCH --mail-type=ALL --mail-user=georgpap@isi.com"
+        profile pegasus "runtime" "600"
+        profile pegasus "glite.arguments" "-M escori --licenses=SCRATCH --mail-type=ALL --mail-user=georgpap@isi.com"
    }
 }
 
@@ -60,6 +60,6 @@ tr pegasus::cleanup {
         type "INSTALLED"
         profile pegasus "queue" "xfer"
         profile pegasus "runtime" "1200"
-        profile pegasus "glite.arguments" "--licenses=SCRATCH --mail-type=ALL --mail-user=georgpap@isi.com"
+        profile pegasus "glite.arguments" "-M escori --licenses=SCRATCH --mail-type=ALL --mail-user=georgpap@isi.com"
    }
 }

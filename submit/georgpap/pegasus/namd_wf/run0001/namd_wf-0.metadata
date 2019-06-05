@@ -1,0 +1,23 @@
+{
+  "root_workflow_uuid": "f9a4d07a-3b0b-4e6e-ad50-24e4ceb0d554",
+  "workflow_uuid": "f9a4d07a-3b0b-4e6e-ad50-24e4ceb0d554",
+  "wf_metadata": {
+    "dax.api": "python",
+    "creator": "georgepap@darek",
+    "created": "Sat Feb  2 01:07:07 2019",
+    "name": "NAMD Example Workflow"
+  },
+  "graph": {
+    "jobs": {
+      "stage_in_remote_cori_0_0": {},
+      "namd2_ID0000001": {},
+      "stage_in_remote_cori_1_0": {},
+      "cleanup_namd_wf_0_cori": {},
+      "stage_out_remote_cori_1_0": {},
+      "namd2_ID0000003": {},
+      "namd2_ID0000002": {},
+      "create_dir_namd_wf_0_cori": {},
+      "namd2_ID0000004": {}
+    }
+  }
+}

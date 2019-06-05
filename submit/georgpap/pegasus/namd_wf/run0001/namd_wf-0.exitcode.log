@@ -1,0 +1,2 @@
+{"std_err": "Empty stdout\n", "retry": 0, "std_out": "", "timestamp": "2019-06-05T15:34:06.821983", "name": ".//00/00/create_dir_namd_wf_0_cori.out", "exitcode": 1, "app_exitcode": null}
+{"std_err": "Empty stdout\n", "retry": 1, "std_out": "", "timestamp": "2019-06-05T15:35:42.029368", "name": ".//00/00/create_dir_namd_wf_0_cori.out", "exitcode": 1, "app_exitcode": null}

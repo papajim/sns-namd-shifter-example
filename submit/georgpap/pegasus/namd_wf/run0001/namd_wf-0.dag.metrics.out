@@ -1,0 +1,13 @@
+Executing: "/home/georgpap/Software/Bosco/libexec/condor_dagman_metrics_reporter" "-f" "namd_wf-0.dag.metrics" "-t" "100"
+
+Will attempt to contact the following metrics servers:
+	http://metrics.pegasus.isi.edu/metrics
+
+Data to send: <{"client":"condor_dagman","version":"8.8.1","planner":"/home/georgpap/Software/Pegasus/pegasus-4.9.2dev/bin/pegasus-plan","planner_version":"4.9.2dev","type":"metrics","wf_uuid":"f9a4d07a-3b0b-4e6e-ad50-24e4ceb0d554","root_wf_uuid":"f9a4d07a-3b0b-4e6e-ad50-24e4ceb0d554","start_time":1559773952.626,"end_time":1559774146.085,"duration":193.459,"exitcode":1,"dagman_id":"38","parent_dagman_id":"","rescue_dag_number":0,"jobs":9,"jobs_failed":1,"jobs_succeeded":0,"dag_jobs":0,"dag_jobs_failed":0,"dag_jobs_succeeded":0,"total_jobs":9,"total_jobs_run":1,"total_job_time":0.000,"dag_status":2}>
+
+Setting the POST option... Success!
+Setting the data to send... Success!
+Set the content length... Success!
+Telling server we are sending json... Success!
+Initializing the error buffer... Success!
+Successfully sent data to server http://metrics.pegasus.isi.edu/metrics

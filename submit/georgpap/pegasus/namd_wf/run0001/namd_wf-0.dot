@@ -1,0 +1,29 @@
+digraph E {
+size="8.0,10.0"
+ratio=fill
+node [shape=ellipse]
+edge [arrowhead=normal, arrowsize=1.0]
+	"stage_in_remote_cori_0_0" [color=gold,style=filled,label="stage_in_remote_cori_0_0"]
+	"namd2_ID0000001" [color=blueviolet,style=filled,label="namd2_ID0000001"]
+	"stage_in_remote_cori_1_0" [color=gold,style=filled,label="stage_in_remote_cori_1_0"]
+	"cleanup_namd_wf_0_cori" [color=deepskyblue,style=filled,label="cleanup_namd_wf_0_cori"]
+	"stage_out_remote_cori_1_0" [color=goldenrod,style=filled,label="stage_out_remote_cori_1_0"]
+	"namd2_ID0000003" [color=blueviolet,style=filled,label="namd2_ID0000003"]
+	"namd2_ID0000002" [color=blueviolet,style=filled,label="namd2_ID0000002"]
+	"create_dir_namd_wf_0_cori" [color=darkturquoise,style=filled,label="create_dir_namd_wf_0_cori"]
+	"namd2_ID0000004" [color=blueviolet,style=filled,label="namd2_ID0000004"]
+
+	"stage_in_remote_cori_0_0" -> "namd2_ID0000001"
+	"stage_in_remote_cori_0_0" -> "namd2_ID0000003"
+	"stage_in_remote_cori_0_0" -> "namd2_ID0000002"
+	"stage_in_remote_cori_0_0" -> "namd2_ID0000004"
+	"namd2_ID0000001" -> "namd2_ID0000002"
+	"stage_in_remote_cori_1_0" -> "namd2_ID0000002"
+	"stage_in_remote_cori_1_0" -> "namd2_ID0000004"
+	"stage_out_remote_cori_1_0" -> "cleanup_namd_wf_0_cori"
+	"namd2_ID0000003" -> "namd2_ID0000004"
+	"namd2_ID0000002" -> "stage_out_remote_cori_1_0"
+	"create_dir_namd_wf_0_cori" -> "stage_in_remote_cori_0_0"
+	"create_dir_namd_wf_0_cori" -> "stage_in_remote_cori_1_0"
+	"namd2_ID0000004" -> "stage_out_remote_cori_1_0"
+}

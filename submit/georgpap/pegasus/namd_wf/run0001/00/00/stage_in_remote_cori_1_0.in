@@ -1,0 +1,25 @@
+[
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "production_200.conf",
+   "id": 1,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "cori_hpss", "url": "hpss:///shifter_test_namd_input.tar/input/production_200.conf", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/00/00/production_200.conf" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "production_250.conf",
+   "id": 2,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "cori_hpss", "url": "hpss:///shifter_test_namd_input.tar/input/production_250.conf", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/00/00/production_250.conf" }
+   ] }
+]

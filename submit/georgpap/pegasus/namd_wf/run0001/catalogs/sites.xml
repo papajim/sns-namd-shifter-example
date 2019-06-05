@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitecatalog xmlns="http://pegasus.isi.edu/schema/sitecatalog"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://pegasus.isi.edu/schema/sitecatalog http://pegasus.isi.edu/schema/sc-4.0.xsd"
+             version="4.0">
+
+    <site handle="cori" arch="x86_64" os="LINUX">
+        <grid type="batch" contact="papajim@cori.nersc.gov" scheduler="slurm" jobtype="auxillary"/>
+        <grid type="batch" contact="papajim@cori.nersc.gov" scheduler="slurm" jobtype="compute"/>
+        
+        <directory type="shared-scratch" path="/global/cscratch1/sd/papajim">
+            <file-server operation="all" url="file:///global/cscratch1/sd/papajim"/>
+        </directory>
+
+        <directory type="shared-storage" path="/global/project/projectdirs/m2187/papajim/sns-wf-test">
+            <file-server operation="all" url="file:///global/project/projectdirs/m2187/papajim/sns-wf-test"/>
+        </directory>
+        
+        <!-- SSH is the style to use for Bosco SSH submits -->
+        <profile namespace="pegasus" key="style">ssh</profile>
+        <!-- works around bug in the HTCondor GAHP, that does not set the remote directory -->
+        <profile namespace="pegasus" key="change.dir">true</profile>
+        
+        <profile namespace="env" key="PEGASUS_HOME">/global/common/software/m2187/pegasus/pegasus-4.9.2dev</profile>
+
+        <profile namespace="pegasus" key="project">m2187</profile>
+    </site>
+</sitecatalog>

@@ -1,0 +1,27 @@
+user georgpap
+grid_dn /DC=gov/DC=nersc/OU=People/CN=Georgios Papadimitriou 74935
+submit_hostname iris.isi.edu
+root_wf_uuid f9a4d07a-3b0b-4e6e-ad50-24e4ceb0d554
+wf_uuid f9a4d07a-3b0b-4e6e-ad50-24e4ceb0d554
+dax /home/georgpap/GitHub/papajim/sns-namd-shifter-example/namd.dax
+dax_label namd_wf
+dax_index 0
+dax_version 3.6
+pegasus_wf_name namd_wf-0
+timestamp 20190605T153223-0700
+basedir /home/georgpap/GitHub/papajim/sns-namd-shifter-example/submit
+submit_dir /home/georgpap/GitHub/papajim/sns-namd-shifter-example/submit/georgpap/pegasus/namd_wf/run0001
+planner /home/georgpap/Software/Pegasus/pegasus-4.9.2dev/bin/pegasus-plan
+planner_version 4.9.2dev
+pegasus_build 20190521164520Z
+planner_arguments "--conf pegasus.properties --dax namd.dax --dir /home/georgpap/GitHub/papajim/sns-namd-shifter-example/submit --sites cori --staging-site cori --output-site cori --cleanup leaf --force "
+jsd jobstate.log
+rundir run0001
+bindir /home/georgpap/Software/Pegasus/pegasus-4.9.2dev/bin
+vogroup pegasus
+uses_pmc false
+properties pegasus.158282845955658873.properties
+condor_log namd_wf-0.log
+dag namd_wf-0.dag
+type dag
+notify namd_wf-0.notify

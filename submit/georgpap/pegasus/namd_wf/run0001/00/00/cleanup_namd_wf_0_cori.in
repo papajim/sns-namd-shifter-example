@@ -1,0 +1,6 @@
+[
+  {
+    "id": 1,
+    "type": "remove",
+    "target": { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001", "recursive": "True" } }
+]

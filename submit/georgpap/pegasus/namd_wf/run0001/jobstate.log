@@ -1,0 +1,18 @@
+1559773953 INTERNAL *** MONITORD_STARTED ***
+1559773952 INTERNAL *** DAGMAN_STARTED 38.0 ***
+1559773956 create_dir_namd_wf_0_cori SUBMIT 39.0 cori - 1
+1559773968 create_dir_namd_wf_0_cori GRID_SUBMIT 39.0 cori - 1
+1559774044 create_dir_namd_wf_0_cori JOB_TERMINATED 39.0 cori - 1
+1559774046 create_dir_namd_wf_0_cori JOB_SUCCESS 0 cori - 1
+1559774046 create_dir_namd_wf_0_cori POST_SCRIPT_STARTED 39.0 cori - 1
+1559774046 create_dir_namd_wf_0_cori POST_SCRIPT_TERMINATED 39.0 cori - 1
+1559774051 create_dir_namd_wf_0_cori POST_SCRIPT_FAILURE 1 cori - 1
+1559774056 create_dir_namd_wf_0_cori SUBMIT 40.0 cori - 2
+1559774065 create_dir_namd_wf_0_cori GRID_SUBMIT 40.0 cori - 2
+1559774140 create_dir_namd_wf_0_cori JOB_TERMINATED 40.0 cori - 2
+1559774141 create_dir_namd_wf_0_cori JOB_SUCCESS 0 cori - 2
+1559774141 create_dir_namd_wf_0_cori POST_SCRIPT_STARTED 40.0 cori - 2
+1559774142 create_dir_namd_wf_0_cori POST_SCRIPT_TERMINATED 40.0 cori - 2
+1559774146 create_dir_namd_wf_0_cori POST_SCRIPT_FAILURE 1 cori - 2
+1559774146 INTERNAL *** DAGMAN_FINISHED 1 ***
+1559774147 INTERNAL *** MONITORD_FINISHED 0 ***

@@ -1,0 +1,73 @@
+[
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "par_all27_prot_lipid.inp",
+   "id": 1,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "cori_hpss", "url": "hpss:///shifter_test_namd_input.tar/input/par_all27_prot_lipid.inp", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/00/00/par_all27_prot_lipid.inp" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "crd.md18_vmd_autopsf.pdb",
+   "id": 2,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "cori_hpss", "url": "hpss:///shifter_test_namd_input.tar/input/crd.md18_vmd_autopsf.pdb", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/00/00/crd.md18_vmd_autopsf.pdb" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "init.xsc",
+   "id": 3,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "cori_hpss", "url": "hpss:///shifter_test_namd_input.tar/input/init.xsc", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/00/00/init.xsc" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "equilibrate_200.conf",
+   "id": 4,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "cori_hpss", "url": "hpss:///shifter_test_namd_input.tar/input/equilibrate_200.conf", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/00/00/equilibrate_200.conf" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "Q42.psf",
+   "id": 5,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "cori_hpss", "url": "hpss:///shifter_test_namd_input.tar/input/Q42.psf", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/00/00/Q42.psf" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "equilibrate_250.conf",
+   "id": 6,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "cori_hpss", "url": "hpss:///shifter_test_namd_input.tar/input/equilibrate_250.conf", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/00/00/equilibrate_250.conf" }
+   ] }
+]

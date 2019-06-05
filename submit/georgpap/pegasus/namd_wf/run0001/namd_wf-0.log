@@ -1,0 +1,38 @@
+000 (039.000.000) 06/05 15:32:36 Job submitted from host: <127.0.0.1:11000?addrs=127.0.0.1-11000&noUDP&sock=1119067_c649_2>
+    DAG Node: create_dir_namd_wf_0_cori
+    pool:cori
+...
+027 (039.000.000) 06/05 15:32:48 Job submitted to grid resource
+    GridResource: batch slurm papajim@cori.nersc.gov
+    GridJobId: batch slurm iris.isi.edu_11000_iris.isi.edu#39.0#1559773956 slurm/20190605/154011
+...
+005 (039.000.000) 06/05 15:34:04 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:38:58, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:38:58, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+000 (040.000.000) 06/05 15:34:16 Job submitted from host: <127.0.0.1:11000?addrs=127.0.0.1-11000&noUDP&sock=1119067_c649_2>
+    DAG Node: create_dir_namd_wf_0_cori
+    pool:cori
+...
+027 (040.000.000) 06/05 15:34:25 Job submitted to grid resource
+    GridResource: batch slurm papajim@cori.nersc.gov
+    GridJobId: batch slurm iris.isi.edu_11000_iris.isi.edu#40.0#1559774056 slurm/20190605/154012
+...
+005 (040.000.000) 06/05 15:35:40 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:39:10, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:39:10, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
