@@ -53,14 +53,14 @@ echo "PATH in container is set to is set to \$PATH"  1>&2
 
 echo -e "\n###################### Staging in input data and executables ######################"  1>&2
 # stage in data and executables
-/global/common/software/m2187/pegasus-wrappers/pegasus-transfer --threads 1  --symlink  1>&2 << 'eof'
+$PEGASUS_HOME/bin/pegasus-transfer --threads 1  --symlink  1>&2 << 'eof'
 [
  { "type": "transfer",
    "linkage": "input",
    "lfn": "par_all27_prot_lipid.inp",
    "id": 1,
    "src_urls": [
-     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/00/00/par_all27_prot_lipid.inp", "checkpoint": "false" }
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/./par_all27_prot_lipid.inp", "checkpoint": "false" }
    ],
    "dest_urls": [
      { "site_label": "cori", "url": "file:///scratch/par_all27_prot_lipid.inp" }
@@ -71,7 +71,7 @@ echo -e "\n###################### Staging in input data and executables ########
    "lfn": "crd.md18_vmd_autopsf.pdb",
    "id": 2,
    "src_urls": [
-     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/00/00/crd.md18_vmd_autopsf.pdb", "checkpoint": "false" }
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/./crd.md18_vmd_autopsf.pdb", "checkpoint": "false" }
    ],
    "dest_urls": [
      { "site_label": "cori", "url": "file:///scratch/crd.md18_vmd_autopsf.pdb" }
@@ -82,7 +82,7 @@ echo -e "\n###################### Staging in input data and executables ########
    "lfn": "init.xsc",
    "id": 3,
    "src_urls": [
-     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/00/00/init.xsc", "checkpoint": "false" }
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/./init.xsc", "checkpoint": "false" }
    ],
    "dest_urls": [
      { "site_label": "cori", "url": "file:///scratch/init.xsc" }
@@ -93,7 +93,7 @@ echo -e "\n###################### Staging in input data and executables ########
    "lfn": "equilibrate_250.conf",
    "id": 4,
    "src_urls": [
-     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/00/00/equilibrate_250.conf", "checkpoint": "false" }
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/./equilibrate_250.conf", "checkpoint": "false" }
    ],
    "dest_urls": [
      { "site_label": "cori", "url": "file:///scratch/equilibrate_250.conf" }
@@ -104,7 +104,7 @@ echo -e "\n###################### Staging in input data and executables ########
    "lfn": "Q42.psf",
    "id": 5,
    "src_urls": [
-     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/00/00/Q42.psf", "checkpoint": "false" }
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/./Q42.psf", "checkpoint": "false" }
    ],
    "dest_urls": [
      { "site_label": "cori", "url": "file:///scratch/Q42.psf" }
@@ -126,7 +126,7 @@ pegasus-kickstart  -n namd2 -N ID0000003 -R cori  -s equilibrate_250.restart.xsc
 set -e
 echo -e "\n############################ Staging out output files ############################"  1>&2
 # stage out
-/global/common/software/m2187/pegasus-wrappers/pegasus-transfer --threads 1  1>&2 << 'eof'
+$PEGASUS_HOME/bin/pegasus-transfer --threads 1  1>&2 << 'eof'
 [
  { "type": "transfer",
    "linkage": "output",
@@ -136,7 +136,7 @@ echo -e "\n############################ Staging out output files ###############
      { "site_label": "cori", "url": "file:///scratch/equilibrate_250.restart.xsc", "checkpoint": "false" }
    ],
    "dest_urls": [
-     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/00/00/equilibrate_250.restart.xsc" }
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/./equilibrate_250.restart.xsc" }
    ] }
  ,
  { "type": "transfer",
@@ -147,7 +147,7 @@ echo -e "\n############################ Staging out output files ###############
      { "site_label": "cori", "url": "file:///scratch/equilibrate_250.restart.coor", "checkpoint": "false" }
    ],
    "dest_urls": [
-     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/00/00/equilibrate_250.restart.coor" }
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/./equilibrate_250.restart.coor" }
    ] }
  ,
  { "type": "transfer",
@@ -158,7 +158,7 @@ echo -e "\n############################ Staging out output files ###############
      { "site_label": "cori", "url": "file:///scratch/equilibrate_250.restart.vel", "checkpoint": "false" }
    ],
    "dest_urls": [
-     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/00/00/equilibrate_250.restart.vel" }
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/./equilibrate_250.restart.vel" }
    ] }
 ]
 eof

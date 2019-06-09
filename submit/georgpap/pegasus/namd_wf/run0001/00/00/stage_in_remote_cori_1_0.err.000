@@ -1,0 +1,15 @@
+2019-06-08 22:48:24: PegasusLite: version 4.9.2dev
+2019-06-08 22:48:24: Executing on host cori04.nersc.gov
+
+########################[Pegasus Lite] Setting up workdir ########################
+2019-06-08 22:48:24: Checking /global/cscratch1/sd/papajim for potential use as work space... 
+2019-06-08 22:48:24:   Workdir is /global/cscratch1/sd/papajim/pegasus.3qBbiCfho - 11P available
+2019-06-08 22:48:24: Changing cwd to /global/cscratch1/sd/papajim/pegasus.3qBbiCfho
+
+##############[Pegasus Lite] Figuring out the worker package to use ##############
+2019-06-08 22:48:24: Using existing Pegasus binaries in /global/common/software/m2187/pegasus/pegasus-4.9.2dev/bin
+2019-06-08 22:48:24: Unable to find condor_chirp - disabling chirping
+
+######################[Pegasus Lite] Executing the user task ######################
+2019-06-08 22:48:34: /global/cscratch1/sd/papajim/pegasus.3qBbiCfho cleaned up
+PegasusLite: exitcode 0

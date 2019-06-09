@@ -1,0 +1,14 @@
+[
+  {
+    "_type": "file", 
+    "_id": "production_250.dcd", 
+    "_attributes": {
+      "ctime": "2019-06-09T06:01:44+00:00", 
+      "checksum.timing": "0.026", 
+      "user": "papajim", 
+      "checksum.type": "sha256", 
+      "checksum.value": "d49e4282ca122740d312fe72e4ddaa96356b5b1bcc926233d6b614a81450411a", 
+      "size": "1775636"
+    }
+  }
+]

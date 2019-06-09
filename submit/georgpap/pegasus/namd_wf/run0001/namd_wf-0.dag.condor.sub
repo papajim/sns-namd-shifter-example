@@ -18,10 +18,10 @@ copy_to_spool	= False
 arguments	= "-p 0 -f -l . -Lockfile namd_wf-0.dag.lock -AutoRescue 1 -DoRescueFrom 0 -Dag namd_wf-0.dag -MaxPost 20 -Suppress_notification -CsdVersion $CondorVersion:' '8.8.1' 'Feb' '19' '2019' 'BuildID:' '461773' '$ -Dagman /home/georgpap/Software/Bosco/bin/condor_dagman"
 environment	= _CONDOR_SCHEDD_ADDRESS_FILE=/home/georgpap/Software/Bosco/local.iris/spool/.schedd_address;_CONDOR_MAX_DAGMAN_LOG=0;_CONDOR_SCHEDD_DAEMON_AD_FILE=/home/georgpap/Software/Bosco/local.iris/spool/.schedd_classad;_CONDOR_DAGMAN_LOG=namd_wf-0.dag.dagman.out
 executable=/home/georgpap/Software/Pegasus/pegasus-4.9.2dev/bin/pegasus-dagman
-+pegasus_wf_uuid="f9a4d07a-3b0b-4e6e-ad50-24e4ceb0d554"
-+pegasus_root_wf_uuid="f9a4d07a-3b0b-4e6e-ad50-24e4ceb0d554"
++pegasus_wf_uuid="e12459cd-7b36-40e9-a4f9-1480ad4261b5"
++pegasus_root_wf_uuid="e12459cd-7b36-40e9-a4f9-1480ad4261b5"
 +pegasus_wf_name="namd_wf-0"
-+pegasus_wf_time="20190605T153223-0700"
++pegasus_wf_time="20190608T224630-0700"
 +pegasus_version="4.9.2dev"
 +pegasus_job_class=11
 +pegasus_cluster_size=1

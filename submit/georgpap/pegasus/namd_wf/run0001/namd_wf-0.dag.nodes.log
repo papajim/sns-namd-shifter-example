@@ -1,46 +1,211 @@
-000 (039.000.000) 06/05 15:32:36 Job submitted from host: <127.0.0.1:11000?addrs=127.0.0.1-11000&noUDP&sock=1119067_c649_2>
+000 (250.000.000) 06/08 22:47:15 Job submitted from host: <127.0.0.1:11000?addrs=127.0.0.1-11000&noUDP&sock=4905_5088_2>
     DAG Node: create_dir_namd_wf_0_cori
     pool:cori
 ...
-027 (039.000.000) 06/05 15:32:48 Job submitted to grid resource
-    GridResource: batch slurm papajim@cori.nersc.gov
-    GridJobId: batch slurm iris.isi.edu_11000_iris.isi.edu#39.0#1559773956 slurm/20190605/154011
+027 (250.000.000) 06/08 22:47:25 Job submitted to grid resource
+    GridResource: batch slurm papajim@cori01.nersc.gov
+    GridJobId: batch slurm iris.isi.edu_11000_iris.isi.edu#250.0#1560059235 slurm/20190608/157284
 ...
-005 (039.000.000) 06/05 15:34:04 Job terminated.
+005 (250.000.000) 06/08 22:48:04 Job terminated.
 	(1) Normal termination (return value 0)
-		Usr 0 00:38:58, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
-		Usr 0 00:38:58, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
 	0  -  Run Bytes Sent By Job
 	0  -  Run Bytes Received By Job
 	0  -  Total Bytes Sent By Job
 	0  -  Total Bytes Received By Job
 ...
-016 (039.000.000) 06/05 15:34:06 POST Script terminated.
-	(1) Normal termination (return value 1)
+016 (250.000.000) 06/08 22:48:05 POST Script terminated.
+	(1) Normal termination (return value 0)
     DAG Node: create_dir_namd_wf_0_cori
 ...
-000 (040.000.000) 06/05 15:34:16 Job submitted from host: <127.0.0.1:11000?addrs=127.0.0.1-11000&noUDP&sock=1119067_c649_2>
-    DAG Node: create_dir_namd_wf_0_cori
+000 (251.000.000) 06/08 22:48:15 Job submitted from host: <127.0.0.1:11000?addrs=127.0.0.1-11000&noUDP&sock=4905_5088_2>
+    DAG Node: stage_in_remote_cori_0_0
     pool:cori
 ...
-027 (040.000.000) 06/05 15:34:25 Job submitted to grid resource
-    GridResource: batch slurm papajim@cori.nersc.gov
-    GridJobId: batch slurm iris.isi.edu_11000_iris.isi.edu#40.0#1559774056 slurm/20190605/154012
+000 (252.000.000) 06/08 22:48:15 Job submitted from host: <127.0.0.1:11000?addrs=127.0.0.1-11000&noUDP&sock=4905_5088_2>
+    DAG Node: stage_in_remote_cori_1_0
+    pool:cori
 ...
-005 (040.000.000) 06/05 15:35:40 Job terminated.
+027 (251.000.000) 06/08 22:48:24 Job submitted to grid resource
+    GridResource: batch slurm papajim@cori01.nersc.gov
+    GridJobId: batch slurm iris.isi.edu_11000_iris.isi.edu#251.0#1560059295 slurm/20190608/157287
+...
+027 (252.000.000) 06/08 22:48:24 Job submitted to grid resource
+    GridResource: batch slurm papajim@cori01.nersc.gov
+    GridJobId: batch slurm iris.isi.edu_11000_iris.isi.edu#252.0#1560059295 slurm/20190608/157288
+...
+005 (252.000.000) 06/08 22:49:03 Job terminated.
 	(1) Normal termination (return value 0)
-		Usr 0 00:39:10, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
-		Usr 0 00:39:10, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
 	0  -  Run Bytes Sent By Job
 	0  -  Run Bytes Received By Job
 	0  -  Total Bytes Sent By Job
 	0  -  Total Bytes Received By Job
 ...
-016 (040.000.000) 06/05 15:35:42 POST Script terminated.
-	(1) Normal termination (return value 1)
-    DAG Node: create_dir_namd_wf_0_cori
+005 (251.000.000) 06/08 22:49:03 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+016 (252.000.000) 06/08 22:49:05 POST Script terminated.
+	(1) Normal termination (return value 0)
+    DAG Node: stage_in_remote_cori_1_0
+...
+016 (251.000.000) 06/08 22:49:05 POST Script terminated.
+	(1) Normal termination (return value 0)
+    DAG Node: stage_in_remote_cori_0_0
+...
+000 (253.000.000) 06/08 22:49:15 Job submitted from host: <127.0.0.1:11000?addrs=127.0.0.1-11000&noUDP&sock=4905_5088_2>
+    DAG Node: namd2_ID0000001
+    pool:cori
+...
+000 (254.000.000) 06/08 22:49:15 Job submitted from host: <127.0.0.1:11000?addrs=127.0.0.1-11000&noUDP&sock=4905_5088_2>
+    DAG Node: namd2_ID0000003
+    pool:cori
+...
+027 (254.000.000) 06/08 22:49:34 Job submitted to grid resource
+    GridResource: batch slurm papajim@cori10.nersc.gov
+    GridJobId: batch slurm iris.isi.edu_11000_iris.isi.edu#254.0#1560059355 slurm/20190608/22155909
+...
+027 (253.000.000) 06/08 22:49:34 Job submitted to grid resource
+    GridResource: batch slurm papajim@cori10.nersc.gov
+    GridJobId: batch slurm iris.isi.edu_11000_iris.isi.edu#253.0#1560059355 slurm/20190608/22155910
+...
+005 (253.000.000) 06/08 22:51:17 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 10:29:20, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 10:29:20, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+005 (254.000.000) 06/08 22:51:17 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 10:34:40, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 10:34:40, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+016 (253.000.000) 06/08 22:51:21 POST Script terminated.
+	(1) Normal termination (return value 0)
+    DAG Node: namd2_ID0000001
+...
+016 (254.000.000) 06/08 22:51:21 POST Script terminated.
+	(1) Normal termination (return value 0)
+    DAG Node: namd2_ID0000003
+...
+000 (255.000.000) 06/08 22:51:31 Job submitted from host: <127.0.0.1:11000?addrs=127.0.0.1-11000&noUDP&sock=4905_5088_2>
+    DAG Node: namd2_ID0000002
+    pool:cori
+...
+000 (256.000.000) 06/08 22:51:31 Job submitted from host: <127.0.0.1:11000?addrs=127.0.0.1-11000&noUDP&sock=4905_5088_2>
+    DAG Node: namd2_ID0000004
+    pool:cori
+...
+027 (255.000.000) 06/08 22:51:45 Job submitted to grid resource
+    GridResource: batch slurm papajim@cori10.nersc.gov
+    GridJobId: batch slurm iris.isi.edu_11000_iris.isi.edu#255.0#1560059491 slurm/20190608/22155915
+...
+027 (256.000.000) 06/08 22:51:45 Job submitted to grid resource
+    GridResource: batch slurm papajim@cori10.nersc.gov
+    GridJobId: batch slurm iris.isi.edu_11000_iris.isi.edu#256.0#1560059491 slurm/20190608/22155916
+...
+001 (255.000.000) 06/08 23:00:05 Job executing on host: batch slurm papajim@cori10.nersc.gov
+...
+001 (256.000.000) 06/08 23:00:26 Job executing on host: batch slurm papajim@cori10.nersc.gov
+...
+005 (256.000.000) 06/08 23:02:36 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 1 20:52:16, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 1 20:52:16, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+016 (256.000.000) 06/08 23:02:41 POST Script terminated.
+	(1) Normal termination (return value 0)
+    DAG Node: namd2_ID0000004
+...
+005 (255.000.000) 06/08 23:02:46 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 1 20:44:48, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 1 20:44:48, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+016 (255.000.000) 06/08 23:02:46 POST Script terminated.
+	(1) Normal termination (return value 0)
+    DAG Node: namd2_ID0000002
+...
+000 (257.000.000) 06/08 23:02:56 Job submitted from host: <127.0.0.1:11000?addrs=127.0.0.1-11000&noUDP&sock=4905_5088_2>
+    DAG Node: stage_out_remote_cori_1_0
+    pool:cori
+...
+027 (257.000.000) 06/08 23:03:05 Job submitted to grid resource
+    GridResource: batch slurm papajim@cori01.nersc.gov
+    GridJobId: batch slurm iris.isi.edu_11000_iris.isi.edu#257.0#1560060176 slurm/20190608/157293
+...
+005 (257.000.000) 06/08 23:03:45 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+016 (257.000.000) 06/08 23:03:46 POST Script terminated.
+	(1) Normal termination (return value 0)
+    DAG Node: stage_out_remote_cori_1_0
+...
+000 (258.000.000) 06/08 23:03:56 Job submitted from host: <127.0.0.1:11000?addrs=127.0.0.1-11000&noUDP&sock=4905_5088_2>
+    DAG Node: cleanup_namd_wf_0_cori
+    pool:cori
+...
+027 (258.000.000) 06/08 23:04:07 Job submitted to grid resource
+    GridResource: batch slurm papajim@cori01.nersc.gov
+    GridJobId: batch slurm iris.isi.edu_11000_iris.isi.edu#258.0#1560060236 slurm/20190608/157294
+...
+005 (258.000.000) 06/08 23:04:44 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+016 (258.000.000) 06/08 23:04:46 POST Script terminated.
+	(1) Normal termination (return value 0)
+    DAG Node: cleanup_namd_wf_0_cori
 ...

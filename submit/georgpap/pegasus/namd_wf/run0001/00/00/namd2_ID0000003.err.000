@@ -1,0 +1,62 @@
+2019-06-08 22:50:23: PegasusLite: version 4.9.2dev
+2019-06-08 22:50:23: Executing on host nid00670
+
+########################[Pegasus Lite] Setting up workdir ########################
+2019-06-08 22:50:23: Checking /global/cscratch1/sd/papajim for potential use as work space... 
+2019-06-08 22:50:23:   Workdir is /global/cscratch1/sd/papajim/pegasus.9UNHKtIPe - 11P available
+2019-06-08 22:50:23: Changing cwd to /global/cscratch1/sd/papajim/pegasus.9UNHKtIPe
+
+##############[Pegasus Lite] Figuring out the worker package to use ##############
+2019-06-08 22:50:23: Using existing Pegasus binaries in /global/common/software/m2187/pegasus/pegasus-4.9.2dev/bin
+
+########[Pegasus Lite] Writing out script to launch user task in container ########
+
+#################[Container] Now in pegasus lite container script #################
+/global/cscratch1/sd/papajim/pegasus.9UNHKtIPe
+2019-06-09 05:50:27: PegasusLite: version 4.9.2dev
+2019-06-09 05:50:27: Executing on host nid00670
+
+##############[Container] Figuring out Pegasus worker package to use ##############
+2019-06-09 05:50:28: Using existing Pegasus binaries in /global/common/software/m2187/pegasus/pegasus-4.9.2dev/bin
+PATH in container is set to is set to /global/common/software/m2187/pegasus/pegasus-4.9.2dev/bin:/opt/NAMD_2.12_Linux-x86_64-multicore:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/udiImage/bin
+
+###################### Staging in input data and executables ######################
+2019-06-09 05:50:29,714    INFO:  Reading URL pairs from stdin
+2019-06-09 05:50:29,714    INFO:  5 transfers loaded
+2019-06-09 05:50:29,715    INFO:  PATH=/global/common/software/m2187/pegasus/pegasus-4.9.2dev/bin:/opt/NAMD_2.12_Linux-x86_64-multicore:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/udiImage/bin
+2019-06-09 05:50:29,715    INFO:  LD_LIBRARY_PATH=/opt/udiImage/modules/mpich/lib64
+2019-06-09 05:50:29,745    INFO:  --------------------------------------------------------------------------------
+2019-06-09 05:50:29,746    INFO:  Starting transfers - attempt 1
+2019-06-09 05:50:31,767    INFO:  ln -f -s '/global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/./Q42.psf' '/scratch/Q42.psf'
+2019-06-09 05:50:31,795    INFO:  ln -f -s '/global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/./crd.md18_vmd_autopsf.pdb' '/scratch/crd.md18_vmd_autopsf.pdb'
+2019-06-09 05:50:31,812    INFO:  ln -f -s '/global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/./equilibrate_250.conf' '/scratch/equilibrate_250.conf'
+2019-06-09 05:50:31,875    INFO:  ln -f -s '/global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/./init.xsc' '/scratch/init.xsc'
+2019-06-09 05:50:31,887    INFO:  ln -f -s '/global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/./par_all27_prot_lipid.inp' '/scratch/par_all27_prot_lipid.inp'
+2019-06-09 05:50:31,896    INFO:  --------------------------------------------------------------------------------
+2019-06-09 05:50:31,896    INFO:  Stats: Total 5 transfers, 816.1 KB transferred in 2 seconds. Rate: 373.9 KB/s (2.9 Mb/s)
+2019-06-09 05:50:31,897    INFO:         Between sites cori->cori : 5 transfers, 816.1 KB transferred in 2 seconds. Rate: 373.9 KB/s (2.9 Mb/s)
+2019-06-09 05:50:31,897    INFO:  All transfers completed successfully.
+
+###############[Container] Checking file integrity for input files ###############
+@@@MONITORING_PAYLOAD - START@@@{"payload": [{"file_type": "input", "failed": 0, "duration": "0.291", "event": "check", "succeeded": 5}], "ts": 1560059432, "monitoring_event": "int.metric"}@@@MONITORING_PAYLOAD - END@@@
+
+#########################[Container] Launching user task #########################
+
+############################ Staging out output files ############################
+2019-06-09 05:50:58,598    INFO:  Reading URL pairs from stdin
+2019-06-09 05:50:58,599    INFO:  3 transfers loaded
+2019-06-09 05:50:58,599    INFO:  PATH=/global/common/software/m2187/pegasus/pegasus-4.9.2dev/bin:/opt/NAMD_2.12_Linux-x86_64-multicore:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/udiImage/bin
+2019-06-09 05:50:58,599    INFO:  LD_LIBRARY_PATH=/opt/udiImage/modules/mpich/lib64
+2019-06-09 05:50:58,622    INFO:  --------------------------------------------------------------------------------
+2019-06-09 05:50:58,622    INFO:  Starting transfers - attempt 1
+2019-06-09 05:51:00,627    INFO:  /bin/cp -f -R -L '/scratch/equilibrate_250.restart.coor' '/global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/./equilibrate_250.restart.coor'
+2019-06-09 05:51:00,695    INFO:  /bin/cp -f -R -L '/scratch/equilibrate_250.restart.vel' '/global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/./equilibrate_250.restart.vel'
+2019-06-09 05:51:00,812    INFO:  /bin/cp -f -R -L '/scratch/equilibrate_250.restart.xsc' '/global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/./equilibrate_250.restart.xsc'
+2019-06-09 05:51:00,821    INFO:  --------------------------------------------------------------------------------
+2019-06-09 05:51:00,821    INFO:  Stats: Total 3 transfers, 173.3 KB transferred in 2 seconds. Rate: 78.0 KB/s (623.8 Kb/s)
+2019-06-09 05:51:00,821    INFO:         Between sites cori->cori : 3 transfers, 173.3 KB transferred in 2 seconds. Rate: 78.0 KB/s (623.8 Kb/s)
+2019-06-09 05:51:00,821    INFO:  All transfers completed successfully.
+
+################[Container] Exiting pegasus lite container script ################
+2019-06-08 22:51:01: /global/cscratch1/sd/papajim/pegasus.9UNHKtIPe cleaned up
+PegasusLite: exitcode 0

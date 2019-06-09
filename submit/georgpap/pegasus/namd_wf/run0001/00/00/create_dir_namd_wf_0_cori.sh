@@ -29,7 +29,7 @@ set +e
 job_ec=0
 pegasus_lite_section_start task_execute
 echo -e "\n######################[Pegasus Lite] Executing the user task ######################"  1>&2
-pegasus-kickstart -n pegasus::dirmanager -N null -i - -R cori  -L namd_wf -T 2019-03-28T16:24:54-07:00 /global/common/software/m2187/pegasus-wrappers/pegasus-transfer 
+pegasus-kickstart -n pegasus::dirmanager -N null -i - -R cori  -L namd_wf -T 2019-03-28T16:24:54-07:00 $PEGASUS_HOME/bin/pegasus-transfer 
 job_ec=$?
 pegasus_lite_section_end task_execute
 set -e

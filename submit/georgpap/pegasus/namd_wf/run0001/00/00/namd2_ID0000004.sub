@@ -6,13 +6,12 @@
 stream_error  = false
 stream_output = false
 environment = ""
-+remote_cerequirements = JOBNAME=="namd2ID0000004" && PASSENV==1 && CORES=="32" && WALLTIME=="00:20:00" && PROJECT=="m2187" && PRIORITY==30 && EXTRA_ARGUMENTS=="--constraint=haswell --licenses=SCRATCH --mail-type=ALL --mail-user=georgpap@isi.com --exclusive"
-+remote_environment = "PEGASUS_HOME=/global/common/software/m2187/pegasus/pegasus-4.9.2dev CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=f9a4d07a-3b0b-4e6e-ad50-24e4ceb0d554 PEGASUS_WF_LABEL=namd_wf PEGASUS_DAG_JOB_ID=namd2_ID0000004 PEGASUS_SITE=cori PEGASUS_RUNTIME=1200 PEGASUS_CORES=32 PEGASUS_PROJECT=m2187 PEGASUS_QUEUE=debug"
-batch_queue = debug
++remote_cerequirements = JOBNAME=="namd2ID0000004" && PASSENV==1 && CORES=="32" && WALLTIME=="00:20:00" && PROJECT=="m2187" && PRIORITY==30 && EXTRA_ARGUMENTS=="--qos debug --constraint=haswell --licenses=SCRATCH --mail-type=ALL --mail-user=georgpap@isi.com --exclusive"
++remote_environment = "PEGASUS_HOME=/global/common/software/m2187/pegasus/pegasus-4.9.2dev CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=e12459cd-7b36-40e9-a4f9-1480ad4261b5 PEGASUS_WF_LABEL=namd_wf PEGASUS_DAG_JOB_ID=namd2_ID0000004 PEGASUS_SITE=cori PEGASUS_RUNTIME=1200 PEGASUS_CORES=32 PEGASUS_PROJECT=m2187"
 copy_to_spool = false
 error = /home/georgpap/GitHub/papajim/sns-namd-shifter-example/submit/georgpap/pegasus/namd_wf/run0001//00/00/namd2_ID0000004.err
 executable = /home/georgpap/GitHub/papajim/sns-namd-shifter-example/submit/georgpap/pegasus/namd_wf/run0001/00/00/namd2_ID0000004.sh
-grid_resource = batch slurm papajim@cori.nersc.gov 
+grid_resource = batch slurm papajim@cori10.nersc.gov 
 log = /home/georgpap/GitHub/papajim/sns-namd-shifter-example/submit/georgpap/pegasus/namd_wf/run0001/namd_wf-0.log
 notification = NEVER
 output = /home/georgpap/GitHub/papajim/sns-namd-shifter-example/submit/georgpap/pegasus/namd_wf/run0001//00/00/namd2_ID0000004.out
@@ -26,12 +25,12 @@ transfer_input_files = /home/georgpap/GitHub/papajim/sns-namd-shifter-example/su
 universe = grid
 when_to_transfer_output = ON_EXIT
 +pegasus_generator = "Pegasus"
-+pegasus_root_wf_uuid = "f9a4d07a-3b0b-4e6e-ad50-24e4ceb0d554"
-+pegasus_wf_uuid = "f9a4d07a-3b0b-4e6e-ad50-24e4ceb0d554"
++pegasus_root_wf_uuid = "e12459cd-7b36-40e9-a4f9-1480ad4261b5"
++pegasus_wf_uuid = "e12459cd-7b36-40e9-a4f9-1480ad4261b5"
 +pegasus_version = "4.9.2dev"
 +pegasus_wf_name = "namd_wf-0"
 +pegasus_wf_app = "namd_example"
-+pegasus_wf_time = "20190605T153223-0700"
++pegasus_wf_time = "20190608T224630-0700"
 +pegasus_wf_xformation = "namd2"
 +pegasus_wf_dax_job_id = "ID0000004"
 +pegasus_wf_dag_job_id = "namd2_ID0000004"

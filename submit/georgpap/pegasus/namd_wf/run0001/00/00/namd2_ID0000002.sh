@@ -53,14 +53,14 @@ echo "PATH in container is set to is set to \$PATH"  1>&2
 
 echo -e "\n###################### Staging in input data and executables ######################"  1>&2
 # stage in data and executables
-/global/common/software/m2187/pegasus-wrappers/pegasus-transfer --threads 1  --symlink  1>&2 << 'eof'
+$PEGASUS_HOME/bin/pegasus-transfer --threads 1  --symlink  1>&2 << 'eof'
 [
  { "type": "transfer",
    "linkage": "input",
    "lfn": "equilibrate_200.restart.vel",
    "id": 1,
    "src_urls": [
-     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/00/00/equilibrate_200.restart.vel", "checkpoint": "false" }
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/./equilibrate_200.restart.vel", "checkpoint": "false" }
    ],
    "dest_urls": [
      { "site_label": "cori", "url": "file:///scratch/equilibrate_200.restart.vel" }
@@ -71,7 +71,7 @@ echo -e "\n###################### Staging in input data and executables ########
    "lfn": "par_all27_prot_lipid.inp",
    "id": 2,
    "src_urls": [
-     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/00/00/par_all27_prot_lipid.inp", "checkpoint": "false" }
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/./par_all27_prot_lipid.inp", "checkpoint": "false" }
    ],
    "dest_urls": [
      { "site_label": "cori", "url": "file:///scratch/par_all27_prot_lipid.inp" }
@@ -82,7 +82,7 @@ echo -e "\n###################### Staging in input data and executables ########
    "lfn": "crd.md18_vmd_autopsf.pdb",
    "id": 3,
    "src_urls": [
-     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/00/00/crd.md18_vmd_autopsf.pdb", "checkpoint": "false" }
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/./crd.md18_vmd_autopsf.pdb", "checkpoint": "false" }
    ],
    "dest_urls": [
      { "site_label": "cori", "url": "file:///scratch/crd.md18_vmd_autopsf.pdb" }
@@ -93,7 +93,7 @@ echo -e "\n###################### Staging in input data and executables ########
    "lfn": "production_200.conf",
    "id": 4,
    "src_urls": [
-     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/00/00/production_200.conf", "checkpoint": "false" }
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/./production_200.conf", "checkpoint": "false" }
    ],
    "dest_urls": [
      { "site_label": "cori", "url": "file:///scratch/production_200.conf" }
@@ -104,7 +104,7 @@ echo -e "\n###################### Staging in input data and executables ########
    "lfn": "equilibrate_200.restart.xsc",
    "id": 5,
    "src_urls": [
-     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/00/00/equilibrate_200.restart.xsc", "checkpoint": "false" }
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/./equilibrate_200.restart.xsc", "checkpoint": "false" }
    ],
    "dest_urls": [
      { "site_label": "cori", "url": "file:///scratch/equilibrate_200.restart.xsc" }
@@ -115,7 +115,7 @@ echo -e "\n###################### Staging in input data and executables ########
    "lfn": "equilibrate_200.restart.coor",
    "id": 6,
    "src_urls": [
-     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/00/00/equilibrate_200.restart.coor", "checkpoint": "false" }
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/./equilibrate_200.restart.coor", "checkpoint": "false" }
    ],
    "dest_urls": [
      { "site_label": "cori", "url": "file:///scratch/equilibrate_200.restart.coor" }
@@ -126,7 +126,7 @@ echo -e "\n###################### Staging in input data and executables ########
    "lfn": "Q42.psf",
    "id": 7,
    "src_urls": [
-     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/00/00/Q42.psf", "checkpoint": "false" }
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/./Q42.psf", "checkpoint": "false" }
    ],
    "dest_urls": [
      { "site_label": "cori", "url": "file:///scratch/Q42.psf" }
@@ -148,7 +148,7 @@ pegasus-kickstart  -n namd2 -N ID0000002 -R cori  -s production_200.dcd=producti
 set -e
 echo -e "\n############################ Staging out output files ############################"  1>&2
 # stage out
-/global/common/software/m2187/pegasus-wrappers/pegasus-transfer --threads 1  1>&2 << 'eof'
+$PEGASUS_HOME/bin/pegasus-transfer --threads 1  1>&2 << 'eof'
 [
  { "type": "transfer",
    "linkage": "output",
@@ -158,7 +158,7 @@ echo -e "\n############################ Staging out output files ###############
      { "site_label": "cori", "url": "file:///scratch/production_200.dcd", "checkpoint": "false" }
    ],
    "dest_urls": [
-     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/00/00/production_200.dcd" }
+     { "site_label": "cori", "url": "file:///global/cscratch1/sd/papajim/georgpap/pegasus/namd_wf/run0001/./production_200.dcd" }
    ] }
 ]
 eof

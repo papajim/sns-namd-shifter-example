@@ -21,45 +21,43 @@ tr namd2 {
         type "INSTALLED"
 		  container "namd_image"
         profile pegasus "exitcode.successmsg" "End of program"
-        profile pegasus "queue" "debug"
         profile pegasus "runtime" "1200"
         profile pegasus "cores" "32"
-        profile pegasus "glite.arguments" "--constraint=haswell --licenses=SCRATCH --mail-type=ALL --mail-user=georgpap@isi.com --exclusive"
+        profile pegasus "glite.arguments" "--qos debug --constraint=haswell --licenses=SCRATCH --mail-type=ALL --mail-user=georgpap@isi.com --exclusive"
     }
 }
 
-tr pegasus::transfer {
+tr pegasus::transfer 
    site cori {
-        pfn "/global/common/software/m2187/pegasus-wrappers/pegasus-transfer"
+        #pfn "/global/common/software/m2187/pegasus-wrappers/pegasus-transfer"
+        pfn "$PEGASUS_HOME/bin/pegasus-transfer"
         arch "x86_64"
         os "LINUX"
         type "INSTALLED"
-        profile pegasus "queue" "xfer"
-        profile pegasus "runtime" "1200"
-        profile pegasus "glite.arguments" "-M escori --licenses=SCRATCH --mail-type=ALL --mail-user=georgpap@isi.com"
+        profile pegasus "runtime" "300"
+        #profile env "PEGASUS_TRANSFER_HPSS_CREDENTIAL" "/global/homes/p/papajim/.netrc"
+        profile pegasus "glite.arguments" "--qos xfer --licenses=SCRATCH --mail-type=ALL --mail-user=georgpap@isi.com"
    }
 }
 
 tr pegasus::dirmanager {
    site cori {
-        pfn "/global/common/software/m2187/pegasus-wrappers/pegasus-transfer"
+        pfn "$PEGASUS_HOME/bin/pegasus-transfer"
         arch "x86_64"
         os "LINUX"
         type "INSTALLED"
-        profile pegasus "queue" "xfer"
-        profile pegasus "runtime" "600"
-        profile pegasus "glite.arguments" "-M escori --licenses=SCRATCH --mail-type=ALL --mail-user=georgpap@isi.com"
+        profile pegasus "runtime" "300"
+        profile pegasus "glite.arguments" "--qos xfer --licenses=SCRATCH --mail-type=ALL --mail-user=georgpap@isi.com"
    }
 }
 
 tr pegasus::cleanup {
    site cori {
-        pfn "/global/common/software/m2187/pegasus-wrappers/pegasus-transfer"
+        pfn "$PEGASUS_HOME/bin/pegasus-transfer"
         arch "x86_64"
         os "LINUX"
         type "INSTALLED"
-        profile pegasus "queue" "xfer"
-        profile pegasus "runtime" "1200"
-        profile pegasus "glite.arguments" "-M escori --licenses=SCRATCH --mail-type=ALL --mail-user=georgpap@isi.com"
+        profile pegasus "runtime" "300"
+        profile pegasus "glite.arguments" "--qos xfer --licenses=SCRATCH --mail-type=ALL --mail-user=georgpap@isi.com"
    }
 }

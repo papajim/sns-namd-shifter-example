@@ -1,14 +1,14 @@
 user georgpap
-grid_dn /DC=gov/DC=nersc/OU=People/CN=Georgios Papadimitriou 74935
+grid_dn null
 submit_hostname iris.isi.edu
-root_wf_uuid f9a4d07a-3b0b-4e6e-ad50-24e4ceb0d554
-wf_uuid f9a4d07a-3b0b-4e6e-ad50-24e4ceb0d554
+root_wf_uuid e12459cd-7b36-40e9-a4f9-1480ad4261b5
+wf_uuid e12459cd-7b36-40e9-a4f9-1480ad4261b5
 dax /home/georgpap/GitHub/papajim/sns-namd-shifter-example/namd.dax
 dax_label namd_wf
 dax_index 0
 dax_version 3.6
 pegasus_wf_name namd_wf-0
-timestamp 20190605T153223-0700
+timestamp 20190608T224630-0700
 basedir /home/georgpap/GitHub/papajim/sns-namd-shifter-example/submit
 submit_dir /home/georgpap/GitHub/papajim/sns-namd-shifter-example/submit/georgpap/pegasus/namd_wf/run0001
 planner /home/georgpap/Software/Pegasus/pegasus-4.9.2dev/bin/pegasus-plan
@@ -20,7 +20,7 @@ rundir run0001
 bindir /home/georgpap/Software/Pegasus/pegasus-4.9.2dev/bin
 vogroup pegasus
 uses_pmc false
-properties pegasus.158282845955658873.properties
+properties pegasus.5026429761090031052.properties
 condor_log namd_wf-0.log
 dag namd_wf-0.dag
 type dag

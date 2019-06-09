@@ -2,10 +2,10 @@ Pegasus LIB /home/georgpap/Software/Pegasus/pegasus-4.9.2dev/lib/python2.7/dist-
 Pegasus LIB /home/georgpap/Software/Pegasus/pegasus-4.9.2dev/lib/pegasus/externals/python
 Pegasus BIN_DIR /home/georgpap/Software/Pegasus/pegasus-4.9.2dev/bin
 Pegasus DAGMAN is  /home/georgpap/Software/Pegasus/pegasus-4.9.2dev/bin/pegasus-dagman
-2019-06-05 15:32:32,622:INFO:pegasus-dagman(138): DAGMAN_COPY_TO_SPOOL is set to false
+2019-06-08 22:47:11,508:INFO:pegasus-dagman(138): DAGMAN_COPY_TO_SPOOL is set to false
 
-2019-06-05 15:32:32,623:INFO:pegasus-dagman(98): Launched Dagman with Pid 1156747
-2019-06-05 15:32:32,624:INFO:pegasus-dagman(123): Launched Monitord with Pid 1156748
+2019-06-08 22:47:11,509:INFO:pegasus-dagman(98): Launched Dagman with Pid 315550
+2019-06-08 22:47:11,509:INFO:pegasus-dagman(123): Launched Monitord with Pid 315551
 Executing condor dagman ... 
-2019-06-05 15:36:02,836:INFO:pegasus-dagman(248): Dagman exited with code 1
-2019-06-05 15:36:02,836:INFO:pegasus-dagman(249): Monitord exited with code 0
+2019-06-08 23:04:57,435:INFO:pegasus-dagman(248): Dagman exited with code 0
+2019-06-08 23:04:57,435:INFO:pegasus-dagman(249): Monitord exited with code 0
