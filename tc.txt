@@ -27,7 +27,7 @@ tr namd2 {
     }
 }
 
-tr pegasus::transfer 
+tr pegasus::transfer {
    site cori {
         #pfn "/global/common/software/m2187/pegasus-wrappers/pegasus-transfer"
         pfn "$PEGASUS_HOME/bin/pegasus-transfer"
