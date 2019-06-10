@@ -29,13 +29,13 @@ tr namd2 {
 
 tr pegasus::transfer {
    site cori {
-        #pfn "/global/common/software/m2187/pegasus-wrappers/pegasus-transfer"
-        pfn "$PEGASUS_HOME/bin/pegasus-transfer"
+        pfn "/global/common/software/m2187/pegasus-wrappers/pegasus-transfer"
+        #pfn "$PEGASUS_HOME/bin/pegasus-transfer"
         arch "x86_64"
         os "LINUX"
         type "INSTALLED"
         profile pegasus "runtime" "300"
-        #profile env "PEGASUS_TRANSFER_HPSS_CREDENTIAL" "/global/homes/p/papajim/.netrc"
+        profile env "PEGASUS_TRANSFER_HPSS_CREDENTIAL" "/global/homes/p/papajim/.netrc"
         profile pegasus "glite.arguments" "--qos xfer --licenses=SCRATCH --mail-type=ALL --mail-user=georgpap@isi.com"
    }
 }
