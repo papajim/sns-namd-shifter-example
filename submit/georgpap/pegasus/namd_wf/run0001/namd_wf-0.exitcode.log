@@ -1,9 +1,0 @@
-{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2019-06-08T22:48:05.651715", "name": ".//00/00/create_dir_namd_wf_0_cori.out", "exitcode": 0, "app_exitcode": 0}
-{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2019-06-08T22:49:05.829518", "name": ".//00/00/stage_in_remote_cori_1_0.out", "exitcode": 0, "app_exitcode": 0}
-{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2019-06-08T22:49:05.829514", "name": ".//00/00/stage_in_remote_cori_0_0.out", "exitcode": 0, "app_exitcode": 0}
-{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2019-06-08T22:51:21.091048", "name": ".//00/00/namd2_ID0000001.out", "exitcode": 0, "app_exitcode": 0}
-{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2019-06-08T22:51:21.091506", "name": ".//00/00/namd2_ID0000003.out", "exitcode": 0, "app_exitcode": 0}
-{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2019-06-08T23:02:41.865821", "name": ".//00/00/namd2_ID0000004.out", "exitcode": 0, "app_exitcode": 0}
-{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2019-06-08T23:02:46.964805", "name": ".//00/00/namd2_ID0000002.out", "exitcode": 0, "app_exitcode": 0}
-{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2019-06-08T23:03:46.125136", "name": ".//00/00/stage_out_remote_cori_1_0.out", "exitcode": 0, "app_exitcode": 0}
-{"std_err": "", "retry": 0, "std_out": "", "timestamp": "2019-06-08T23:04:46.277891", "name": ".//00/00/cleanup_namd_wf_0_cori.out", "exitcode": 0, "app_exitcode": 0}
