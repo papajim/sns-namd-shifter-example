@@ -21,7 +21,7 @@
         <!-- SSH is the style to use for Bosco SSH submits -->
         <profile namespace="pegasus" key="style">ssh</profile>
         
-        <profile namespace="env" key="PEGASUS_HOME">/global/common/software/m2187/pegasus/pegasus-4.9.2dev</profile>
+        <profile namespace="env" key="PEGASUS_HOME">/global/common/software/m2187/pegasus/development</profile>
 
         <profile namespace="pegasus" key="project">m2187</profile>
     </site>
