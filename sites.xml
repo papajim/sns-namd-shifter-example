@@ -5,10 +5,8 @@
              version="4.0">
 
     <site handle="cori" arch="x86_64" os="LINUX">
-        <!-- USE XFER QUEUE ON cori01 -->
-        <grid type="batch" contact="papajim@cori01.nersc.gov" scheduler="slurm" jobtype="auxillary"/>
-        <!-- USE OTHER QUEUES ON cori10 -->
-        <grid type="batch" contact="papajim@cori10.nersc.gov" scheduler="slurm" jobtype="compute"/>
+        <grid type="batch" contact="papajim@cori.nersc.gov" scheduler="slurm" jobtype="auxillary"/>
+        <grid type="batch" contact="papajim@cori.nersc.gov" scheduler="slurm" jobtype="compute"/>
         
         <directory type="shared-scratch" path="/global/cscratch1/sd/papajim">
             <file-server operation="all" url="file:///global/cscratch1/sd/papajim"/>
